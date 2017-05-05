@@ -1,0 +1,7 @@
+#Fri May 05 13:34:36 NZST 2017
+base.0=C\:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8a137e583543270c9fd23744316cfe394a61b1bd
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_87744a80d8eb505b191ef9406ec9091593eacc46\\classes.dex
+base.1=C\:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_87744a80d8eb505b191ef9406ec9091593eacc46
+file.0=C\:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8a137e583543270c9fd23744316cfe394a61b1bd\\classes.dex
