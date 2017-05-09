@@ -1,30 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_disabled_color_18.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Desktop\\345\\quickstart-cpp-master\\database\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     }
 ]
