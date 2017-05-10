@@ -199,6 +199,8 @@ extern "C" int common_main(int argc, const char* argv[]) {
     WaitForCompletion(sign_in_future, "SignInAnonymously");
     if (sign_in_future.error() == firebase::auth::kAuthErrorNone) {
       LogMessage("Auth: Signed in anonymously.");
+      firebase::auth::User* user = *sign_in_future.result();
+      LogMessage("Sign in succeeded for `%s`", user->uid().c_str());
     } else {
       LogMessage("ERROR: Could not sign in anonymously. Error %d: %s",
                  sign_in_future.error(), sign_in_future.error_message());
