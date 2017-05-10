@@ -7,8 +7,179 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
+                    "endColumn": 42,
+                    "endOffset": 143
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 200,
+                        "endColumn": 42,
+                        "endOffset": 238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 41,
+                    "endOffset": 185
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 41,
+                        "endOffset": 328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 190,
+                    "endColumn": 45,
+                    "endOffset": 231
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 244,
+                        "endColumn": 45,
+                        "endOffset": 285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 236,
+                    "endColumn": 43,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 632,
+                        "endColumn": 43,
+                        "endOffset": 671
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 46,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 677,
+                        "endColumn": 46,
+                        "endOffset": 719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 46,
+                    "endOffset": 369
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 769,
+                        "endColumn": 46,
+                        "endOffset": 811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 374,
+                    "endColumn": 45,
+                    "endOffset": 415
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 45,
+                        "endOffset": 192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 420,
+                    "endColumn": 46,
+                    "endOffset": 462
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 11,
+                        "startOffset": 51,
+                        "endColumn": 53,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 467,
+                    "endColumn": 50,
+                    "endOffset": 513
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 50,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 518,
                     "endColumn": 89,
-                    "endOffset": 190
+                    "endOffset": 603
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -23,11 +194,11 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 195,
+                    "startOffset": 608,
                     "endColumn": 79,
-                    "endOffset": 270
+                    "endOffset": 683
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -42,11 +213,11 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 275,
+                    "startOffset": 688,
                     "endColumn": 89,
-                    "endOffset": 360
+                    "endOffset": 773
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -61,11 +232,11 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 365,
+                    "startOffset": 778,
                     "endColumn": 89,
-                    "endOffset": 450
+                    "endOffset": 863
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -80,11 +251,11 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 455,
+                    "startOffset": 868,
                     "endColumn": 79,
-                    "endOffset": 530
+                    "endOffset": 943
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -99,11 +270,11 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 535,
+                    "startOffset": 948,
                     "endColumn": 80,
-                    "endOffset": 611
+                    "endOffset": 1024
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -118,11 +289,11 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 616,
+                    "startOffset": 1029,
                     "endColumn": 79,
-                    "endOffset": 691
+                    "endOffset": 1104
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -137,11 +308,11 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 696,
+                    "startOffset": 1109,
                     "endColumn": 79,
-                    "endOffset": 771
+                    "endOffset": 1184
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -156,11 +327,220 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1499,
+                    "startOffset": 1189,
+                    "endColumn": 45,
+                    "endOffset": 1230
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 375,
+                        "endColumn": 45,
+                        "endOffset": 416
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1235,
+                    "endColumn": 50,
+                    "endOffset": 1281
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 422,
+                        "endColumn": 50,
+                        "endOffset": 468
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1286,
+                    "endColumn": 48,
+                    "endOffset": 1330
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 474,
+                        "endColumn": 48,
+                        "endOffset": 518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1335,
+                    "endColumn": 51,
+                    "endOffset": 1382
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 524,
+                        "endColumn": 51,
+                        "endOffset": 571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1387,
+                    "endColumn": 53,
+                    "endOffset": 1436
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 577,
+                        "endColumn": 53,
+                        "endOffset": 626
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1441,
+                    "endColumn": 42,
+                    "endOffset": 1479
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 725,
+                        "endColumn": 42,
+                        "endOffset": 763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1484,
+                    "endColumn": 39,
+                    "endOffset": 1519
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 334,
+                        "endColumn": 39,
+                        "endOffset": 369
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 2247,
+                    "endColumn": 57,
+                    "endOffset": 2300
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 130,
+                        "endColumn": 57,
+                        "endOffset": 183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2305,
+                    "endColumn": 55,
+                    "endOffset": 2356
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 55,
+                        "endOffset": 240
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 2361,
+                    "endColumn": 41,
+                    "endOffset": 2398
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 246,
+                        "endColumn": 41,
+                        "endOffset": 283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 2403,
+                    "endColumn": 40,
+                    "endOffset": 2439
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 289,
+                        "endColumn": 40,
+                        "endOffset": 325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2444,
                     "endColumn": 67,
-                    "endOffset": 1562
+                    "endOffset": 2507
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\d27f430c58563938de8482e454471674b3f7a1a9\\output\\res\\values\\values.xml",
@@ -175,11 +555,30 @@
             },
             {
                 "to": {
-                    "startLine": 34,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 1567,
-                    "endColumn": 59,
-                    "endOffset": 1622
+                    "startOffset": 2512,
+                    "endColumn": 57,
+                    "endOffset": 2565
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 2,
+                        "startOffset": 102,
+                        "endColumn": 55,
+                        "endOffset": 155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2570,
+                    "endColumn": 50,
+                    "endOffset": 2616
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
@@ -187,18 +586,265 @@
                         "startLine": 2,
                         "startColumn": 2,
                         "startOffset": 53,
-                        "endColumn": 57,
-                        "endOffset": 108
+                        "endColumn": 48,
+                        "endOffset": 99
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 1627,
+                    "startOffset": 2621,
+                    "endColumn": 103,
+                    "endOffset": 2720
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 2,
+                        "startOffset": 287,
+                        "endColumn": 101,
+                        "endOffset": 386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 2725,
+                    "endColumn": 50,
+                    "endOffset": 2771
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 2,
+                        "startOffset": 1340,
+                        "endColumn": 54,
+                        "endOffset": 1392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 2776,
+                    "endColumn": 45,
+                    "endOffset": 2817
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 2,
+                        "startOffset": 1446,
+                        "endColumn": 43,
+                        "endOffset": 1487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 2822,
+                    "endColumn": 69,
+                    "endOffset": 2887
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 2,
+                        "startOffset": 1212,
+                        "endColumn": 67,
+                        "endOffset": 1277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 2892,
+                    "endColumn": 75,
+                    "endOffset": 2963
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 2,
+                        "startOffset": 1060,
+                        "endColumn": 73,
+                        "endOffset": 1131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 2968,
+                    "endColumn": 94,
+                    "endOffset": 3058
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 967,
+                        "endColumn": 92,
+                        "endOffset": 1057
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3063,
+                    "endColumn": 43,
+                    "endOffset": 3102
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 925,
+                        "endColumn": 41,
+                        "endOffset": 964
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 3107,
+                    "endColumn": 45,
+                    "endOffset": 3148
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 2,
+                        "startOffset": 1530,
+                        "endColumn": 43,
+                        "endOffset": 1571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 3153,
+                    "endColumn": 61,
+                    "endOffset": 3210
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 1280,
+                        "endColumn": 59,
+                        "endOffset": 1337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 3215,
+                    "endColumn": 41,
+                    "endOffset": 3252
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 2,
+                        "startOffset": 1490,
+                        "endColumn": 39,
+                        "endOffset": 1527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 3257,
+                    "endColumn": 49,
+                    "endOffset": 3302
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 2,
+                        "startOffset": 1574,
+                        "endColumn": 47,
+                        "endOffset": 1619
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 3307,
+                    "endColumn": 53,
+                    "endOffset": 3356
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 2,
+                        "startOffset": 389,
+                        "endColumn": 51,
+                        "endOffset": 438
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3361,
+                    "endColumn": 59,
+                    "endOffset": 3416
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 2,
+                        "startOffset": 441,
+                        "endColumn": 57,
+                        "endOffset": 496
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 3421,
                     "endColumn": 104,
-                    "endOffset": 1727
+                    "endOffset": 3521
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -213,11 +859,11 @@
             },
             {
                 "to": {
-                    "startLine": 36,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 1732,
+                    "startOffset": 3526,
                     "endColumn": 180,
-                    "endOffset": 1908
+                    "endOffset": 3702
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -232,11 +878,11 @@
             },
             {
                 "to": {
-                    "startLine": 37,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 1913,
+                    "startOffset": 3707,
                     "endColumn": 124,
-                    "endOffset": 2033
+                    "endOffset": 3827
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -251,11 +897,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 2038,
+                    "startOffset": 3832,
                     "endColumn": 106,
-                    "endOffset": 2140
+                    "endOffset": 3934
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -270,11 +916,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 2145,
+                    "startOffset": 3939,
                     "endColumn": 179,
-                    "endOffset": 2320
+                    "endOffset": 4114
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -289,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 2325,
+                    "startOffset": 4119,
                     "endColumn": 122,
-                    "endOffset": 2443
+                    "endOffset": 4237
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -308,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 2448,
+                    "startOffset": 4242,
                     "endColumn": 102,
-                    "endOffset": 2546
+                    "endOffset": 4340
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -327,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 42,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 2551,
+                    "startOffset": 4345,
                     "endColumn": 166,
-                    "endOffset": 2713
+                    "endOffset": 4507
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\d27f430c58563938de8482e454471674b3f7a1a9\\output\\res\\values\\values.xml",
@@ -346,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 2718,
+                    "startOffset": 4512,
                     "endColumn": 187,
-                    "endOffset": 2901
+                    "endOffset": 4695
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -365,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 2906,
+                    "startOffset": 4700,
                     "endColumn": 104,
-                    "endOffset": 3006
+                    "endOffset": 4800
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -384,11 +1030,11 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 3011,
+                    "startOffset": 4805,
                     "endColumn": 180,
-                    "endOffset": 3187
+                    "endOffset": 4981
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -403,11 +1049,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 3192,
+                    "startOffset": 4986,
                     "endColumn": 124,
-                    "endOffset": 3312
+                    "endOffset": 5106
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -422,11 +1068,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 3317,
+                    "startOffset": 5111,
                     "endColumn": 174,
-                    "endOffset": 3487
+                    "endOffset": 5281
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -441,11 +1087,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 3492,
+                    "startOffset": 5286,
                     "endColumn": 147,
-                    "endOffset": 3635
+                    "endOffset": 5429
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -460,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 3640,
+                    "startOffset": 5434,
                     "endColumn": 62,
-                    "endOffset": 3698
+                    "endOffset": 5492
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -479,11 +1125,11 @@
             },
             {
                 "to": {
-                    "startLine": 50,
+                    "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 3703,
+                    "startOffset": 5497,
                     "endColumn": 61,
-                    "endOffset": 3760
+                    "endOffset": 5554
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -498,11 +1144,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 3765,
+                    "startOffset": 5559,
                     "endColumn": 78,
-                    "endOffset": 3839
+                    "endOffset": 5633
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\values\\values.xml",
@@ -517,11 +1163,11 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 3844,
+                    "startOffset": 5638,
                     "endColumn": 143,
-                    "endOffset": 3983
+                    "endOffset": 5777
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -536,11 +1182,30 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 3988,
+                    "startOffset": 5782,
+                    "endColumn": 39,
+                    "endOffset": 5817
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 2,
+                        "startOffset": 158,
+                        "endColumn": 37,
+                        "endOffset": 193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 5822,
                     "endColumn": 108,
-                    "endOffset": 4092
+                    "endOffset": 5926
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -555,11 +1220,30 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 4097,
+                    "startOffset": 5931,
+                    "endColumn": 126,
+                    "endOffset": 6053
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 2,
+                        "startOffset": 1685,
+                        "endColumn": 124,
+                        "endOffset": 1807
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 6058,
                     "endColumn": 81,
-                    "endOffset": 4174
+                    "endOffset": 6135
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -574,11 +1258,11 @@
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 4179,
+                    "startOffset": 6140,
                     "endColumn": 103,
-                    "endOffset": 4278
+                    "endOffset": 6239
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -593,11 +1277,11 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 4283,
+                    "startOffset": 6244,
                     "endColumn": 102,
-                    "endOffset": 4381
+                    "endOffset": 6342
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -612,11 +1296,11 @@
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 4386,
+                    "startOffset": 6347,
                     "endColumn": 119,
-                    "endOffset": 4501
+                    "endOffset": 6462
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -631,11 +1315,11 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 4506,
+                    "startOffset": 6467,
                     "endColumn": 97,
-                    "endOffset": 4599
+                    "endOffset": 6560
                 },
                 "from": {
                     "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
@@ -645,6 +1329,234 @@
                         "startOffset": 717,
                         "endColumn": 97,
                         "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 6565,
+                    "endColumn": 44,
+                    "endOffset": 6605
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 2,
+                        "startOffset": 788,
+                        "endColumn": 42,
+                        "endOffset": 828
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 6610,
+                    "endColumn": 46,
+                    "endOffset": 6652
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 2,
+                        "startOffset": 880,
+                        "endColumn": 44,
+                        "endOffset": 922
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 6657,
+                    "endColumn": 52,
+                    "endOffset": 6705
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 2,
+                        "startOffset": 1395,
+                        "endColumn": 50,
+                        "endOffset": 1443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 6710,
+                    "endColumn": 50,
+                    "endOffset": 6756
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 2,
+                        "startOffset": 831,
+                        "endColumn": 48,
+                        "endOffset": 877
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 6761,
+                    "endColumn": 64,
+                    "endOffset": 6821
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 2,
+                        "startOffset": 1622,
+                        "endColumn": 62,
+                        "endOffset": 1682
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 6826,
+                    "endColumn": 92,
+                    "endOffset": 6914
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 2,
+                        "startOffset": 196,
+                        "endColumn": 90,
+                        "endOffset": 284
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 6919,
+                    "endColumn": 49,
+                    "endOffset": 6964
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 2,
+                        "startOffset": 627,
+                        "endColumn": 47,
+                        "endOffset": 672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 6969,
+                    "endColumn": 51,
+                    "endOffset": 7016
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 2,
+                        "startOffset": 577,
+                        "endColumn": 49,
+                        "endOffset": 624
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 7021,
+                    "endColumn": 79,
+                    "endOffset": 7096
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 2,
+                        "startOffset": 499,
+                        "endColumn": 77,
+                        "endOffset": 574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 7101,
+                    "endColumn": 56,
+                    "endOffset": 7153
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 2,
+                        "startOffset": 733,
+                        "endColumn": 54,
+                        "endOffset": 785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 7158,
+                    "endColumn": 59,
+                    "endOffset": 7213
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 2,
+                        "startOffset": 675,
+                        "endColumn": 57,
+                        "endOffset": 730
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 7218,
+                    "endColumn": 79,
+                    "endOffset": 7293
+                },
+                "from": {
+                    "file": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 2,
+                        "startOffset": 1134,
+                        "endColumn": 77,
+                        "endOffset": 1209
                     }
                 }
             }

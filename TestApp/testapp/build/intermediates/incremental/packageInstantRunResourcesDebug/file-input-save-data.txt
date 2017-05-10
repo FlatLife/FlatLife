@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 10 13:40:43 NZST 2017
+#Wed May 10 14:15:28 NZST 2017
 25.file=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_disabled.xml
 25.base=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\resources-debug.ap_
 22.set=ANDROID_RESOURCE

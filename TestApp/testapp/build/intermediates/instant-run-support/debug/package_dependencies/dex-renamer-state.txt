@@ -1,4 +1,4 @@
-#Wed May 10 13:40:47 NZST 2017
+#Wed May 10 14:15:31 NZST 2017
 file.2=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-24.0.0_6143e671a29c0fc87684300c5c2ddf84d68c8666\\classes.dex
 base.2=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-24.0.0_6143e671a29c0fc87684300c5c2ddf84d68c8666
 file.1=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-24.0.0_8ad84fd1b45b44f4d531977c7ae811237cd0af6d\\classes.dex

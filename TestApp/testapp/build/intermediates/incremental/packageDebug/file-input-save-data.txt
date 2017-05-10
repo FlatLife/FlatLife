@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 10 13:40:49 NZST 2017
+#Wed May 10 14:25:48 NZST 2017
 25.file=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 25.base=C\:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\resources-debug.ap_
 22.set=JAVA_RESOURCE
