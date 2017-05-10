@@ -212,6 +212,40 @@ extern "C" int common_main(int argc, const char* argv[]) {
           "depending on the security settings.");
     }
   }
+ 
+ void CreateUser(string email, string password){
+  firebase::Future<firebase::auth::User*> sign_in_future = auth->CreateUserWithEmailAndPassword(email, password);
+      
+  WaitForCompletion(sign_in_future, "SignInUser");
+    if (sign_in_future.error() == firebase::auth::kAuthErrorNone) {
+      LogMessage("Auth: Signed In User.");
+      firebase::auth::User* user = *sign_in_future.result();
+      LogMessage("Sign in succeeded for `%s`", user->uid().c_str());
+    } else {
+      LogMessage("ERROR: Could not sign in user. Error %d: %s",
+                 sign_in_future.error(), sign_in_future.error_message());
+      LogMessage(
+          "  Attempting to connect to the database anyway. This may fail "
+          "depending on the security settings.");
+    }
+ }
+ 
+ void LogUserIn(string email, string password){
+  firebase::Future<firebase::auth::User*> sign_in_future = auth->SignInWithEmailAndPassword(email, password);
+  
+  WaitForCompletion(sign_in_future, "SignInUser");
+    if (sign_in_future.error() == firebase::auth::kAuthErrorNone) {
+      LogMessage("Auth: Signed In User.");
+      firebase::auth::User* user = *sign_in_future.result();
+      LogMessage("Sign in succeeded for `%s`", user->uid().c_str());
+    } else {
+      LogMessage("ERROR: Could not sign in user. Error %d: %s",
+                 sign_in_future.error(), sign_in_future.error_message());
+      LogMessage(
+          "  Attempting to connect to the database anyway. This may fail "
+          "depending on the security settings.");
+    }
+ }
 
   std::string saved_url;  // persists across connections
 
