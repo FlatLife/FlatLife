@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\res\\layout\\main.xml"
+        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\layout\\auth.xml",
+        "source": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\layout\\auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\res\\layout\\main.xml"
     }
 ]

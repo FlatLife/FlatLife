@@ -46,7 +46,8 @@ int id none 0x7f070002
 int id standard 0x7f070004
 int id wide 0x7f070005
 int integer google_play_services_version 0x7f060000
-int layout main 0x7f030000
+int layout auth 0x7f030000
+int layout main 0x7f030001
 int string app_name 0x7f040011
 int string common_google_play_services_enable_button 0x7f040000
 int string common_google_play_services_enable_text 0x7f040001

@@ -122,7 +122,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int google_play_services_version=0x7f060000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int auth=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040011;
