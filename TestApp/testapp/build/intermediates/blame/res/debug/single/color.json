@@ -1,50 +1,50 @@
 [
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\f3ec3baf75d5d37fa7e0865faabf6621a8bc9b13\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2ceaa8f63cbb300f0c0e290e69f88bf41d2c380d\\output\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Shaye\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\Shaye\\.android\\build-cache\\2e772f4efbf09ae4e8a2d8ccd5624bf63b036a46\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "C:\\Users\\Gavin\\Documents\\FlatLife\\TestApp\\testapp\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Gavin\\.android\\build-cache\\4a18bd8d21dfac5b73ec924b6e94790e6fade517\\output\\res\\color\\switch_thumb_material_dark.xml"
     }
 ]
