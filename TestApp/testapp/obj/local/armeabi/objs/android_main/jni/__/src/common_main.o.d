@@ -63,7 +63,8 @@
   /345/firebase_cpp_sdk/include\firebase/database/listener.h \
   /345/firebase_cpp_sdk/include\firebase/database/transaction.h \
   /345/firebase_cpp_sdk/include\firebase/database/mutable_data.h \
-  /345/firebase_cpp_sdk/include\firebase/util.h jni/../src/main.h
+  /345/firebase_cpp_sdk/include\firebase/util.h jni/../src/c++header.h \
+  jni/../src/main.h
 
 C:/Users/Gavin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\algorithm:
 
@@ -192,5 +193,7 @@ C:/Users/Gavin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/ll
 /345/firebase_cpp_sdk/include\firebase/database/mutable_data.h:
 
 /345/firebase_cpp_sdk/include\firebase/util.h:
+
+jni/../src/c++header.h:
 
 jni/../src/main.h:

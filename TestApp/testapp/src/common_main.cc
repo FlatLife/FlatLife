@@ -19,6 +19,7 @@
 #include "firebase/database.h"
 #include "firebase/future.h"
 #include "firebase/util.h"
+#include "c++header.h"
 
 // Thin OS abstraction layer.
 #include "main.h"  // NOLINT
@@ -26,6 +27,9 @@
 // An example of a ValueListener object. This specific version will
 // simply log every value it sees, and store them in a list so we can
 // confirm that all values were received.
+
+::firebase::auth::Auth* auth = nullptr;
+
 class SampleValueListener : public firebase::database::ValueListener {
  public:
   void OnValueChanged(
@@ -155,7 +159,7 @@ void CreateUser(char* email, char* password, ::firebase::auth::Auth* auth){
     }
  }
 
- void LogUserIn(char* email, char* password, ::firebase::auth::Auth* auth){
+ void LogInUser(char* email, char* password, ::firebase::auth::Auth* auth){
   firebase::Future<firebase::auth::User*> sign_in_future = auth->SignInWithEmailAndPassword(email, password);
 
   WaitForCompletion(sign_in_future, "SignInUser");
@@ -170,6 +174,15 @@ void CreateUser(char* email, char* password, ::firebase::auth::Auth* auth){
           "  Attempting to connect to the database anyway. This may fail "
           "depending on the security settings.");
     }
+ }
+
+ //Java call to C++ to log user in.
+ JNIEXPORT void JNICALL Java_com_google_firebase_example_LoginActivity_logInCall(JNIEnv* jenv, jobject obj){
+      if(auth != nullptr){
+            LogInUser("shaye.mckay@xtra.co.nz","password", auth);
+      } else {
+         LogMessage("Could not sign in user.");
+      }
  }
 
 extern "C" int common_main(int argc, const char* argv[]) {
@@ -228,7 +241,7 @@ extern "C" int common_main(int argc, const char* argv[]) {
   // work as long as your project's Authentication permissions allow anonymous
   // signin.
   {
-    LogUserIn("shaye.mckay@xtra.co.nz","password", auth);
+    LogInUser("shaye.mckay@xtra.co.nz","password", auth);
 
    // firebase::Future<firebase::auth::User*> sign_in_future =
      //   auth->SignInAnonymously();
