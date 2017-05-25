@@ -1,68 +1,43 @@
 //
-//  NoticesTableViewController.m
+//  NoticesTableViewController.mm
 //  TestApp1
 //
-//  Created by Max Newall on 5/18/17.
+//  Created by Gavin Trebilcock on 5/24/17.
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 
-#import "NoticesTableViewController.h"
-#import "Notice.hpp"
+#import "ChoresTableViewController.h"
+#import "Chore.hpp"
 #import "ListWrapper.hpp"
 
-@interface NoticesTableViewController () {
+@interface ChoresTableViewController () {
     ListWrapper *list;
-    IBOutlet UITableView *tableRef;
 }
 
 @end
 
 
-@implementation NoticesTableViewController
+@implementation ChoresTableViewController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     list = new ListWrapper();
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
--(void)viewDidAppear:(BOOL)animated{
-    [self.tableView reloadData];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return list->returnNoticeListSize();
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"NotificationViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        
-    }
-    
-    // Configure the cell...
-    
-    Notice notice = list->noticeList[indexPath.row];
-    cell.textLabel.text = [NSString stringWithCString:notice.getNoticeMessage().c_str() encoding:[NSString defaultCStringEncoding]];
-    //[self.tableView reloadData];
-    return cell;
+-(void)viewDidAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,10 +47,39 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    list->noticeList.erase(list->noticeList.begin() +  indexPath.row);
+    list->choreList.erase(list->choreList.begin() +  indexPath.row);
     [tableView reloadData];
 }
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return list->returnChoreListSize();
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"ChoreViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        
+    }
+    
+    // Configure the cell...
+    
+    Chore chore = list->choreList[indexPath.row];
+    cell.textLabel.text = [NSString stringWithCString:chore.getChoreName().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.detailTextLabel.text = [NSString stringWithCString:chore.getChoreTime().c_str() encoding:[NSString defaultCStringEncoding]];
+    
+    return cell;
+}
 
 
 /*

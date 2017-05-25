@@ -1,21 +1,15 @@
 //
-//  NotificationViewCell.mm
-//  TestApp1
+//  ChoreViewCell.m
+//  v9
 //
-//  Created by Max Newall on 5/18/17.
+//  Created by Gavin Trebilcock on 5/24/17.
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 
-#import "NotificationViewCell.h"
+#import "ChoreViewCell.h"
 
 
-@implementation NotificationViewCell
-- (IBAction)ButtonPress:(id)sender {
-}
-
-- (IBAction)NotificationText:(id)sender {
-}
-
+@implementation ChoreViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

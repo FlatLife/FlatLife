@@ -12,17 +12,21 @@
 #include <stdio.h>
 #include <vector>
 #import "Notice.hpp"
+#import "Chore.hpp"
+
 
 using namespace std;
 
 class ListWrapper {
 
 public:
-    vector<Notice> noticeList;
-    //string getListMessage();
-    bool getListMessageState();
-    void setObjectValues(string objectString, bool objectState);
-    long returnListSize();
+    static vector<Notice> noticeList;
+    void setNoticeObjectValues(string noticeString, bool noticeState);
+    long returnNoticeListSize();
+    
+    static vector<Chore> choreList;
+    void setChoreObjectValues(string choreString, string timeString);
+    long returnChoreListSize();
 };
 
 #endif /* ListWrapper_hpp */

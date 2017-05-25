@@ -6,17 +6,34 @@
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 
-#include "ListWrapper.hpp"
 #include <string>
+#include "ListWrapper.hpp"
 #include "Notice.hpp"
+#include "Chore.hpp"
 
 using namespace std;
 
-void ListWrapper::setObjectValues(string objectString, bool objectState) {
+vector<Chore> ListWrapper::choreList;
+vector<Notice> ListWrapper::noticeList;
+
+void ListWrapper::setNoticeObjectValues(string objectString, bool objectState) {
+    noticeList.resize(returnNoticeListSize());
     noticeList.push_back(*new Notice(objectState, objectString));
+    printf("number of objects in list : %ld \n", returnNoticeListSize());
 }
 
-long ListWrapper::returnListSize() {
+long ListWrapper::returnNoticeListSize() {
     return noticeList.size();
 }
 
+void ListWrapper::setChoreObjectValues(string choreString, string timeString) {
+    choreList.resize(returnChoreListSize());
+    choreList.push_back(*new Chore(choreString, timeString));
+    printf("list size is: %ld \n", returnChoreListSize());
+}
+
+
+long ListWrapper::returnChoreListSize() {
+    return choreList.size();
+    
+}

@@ -20,6 +20,11 @@
 		6205E15C1ED3E13700DD487F /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6205E1521ED3E13700DD487F /* TestView.xib */; };
 		6205E15D1ED3E13700DD487F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6205E1541ED3E13700DD487F /* ViewController.mm */; };
 		6205E15F1ED3E15500DD487F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E15E1ED3E15500DD487F /* main.m */; };
+		96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */; };
+		96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */; };
+		96EDB86D1ED51A72008FA98E /* ChoresTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */; };
+		96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86E1ED51AFE008FA98E /* Chore.cpp */; };
+		96FBB0281ED6671E00F7E119 /* AddNoticeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,16 @@
 		6205E1531ED3E13700DD487F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6205E1541ED3E13700DD487F /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		6205E15E1ED3E15500DD487F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96AB1C9E1ED523110074C597 /* ChoreViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreViewCell.h; sourceTree = "<group>"; };
+		96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoreViewCell.mm; sourceTree = "<group>"; };
+		96AB1CA11ED52E630074C597 /* AddChoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChoreViewController.h; sourceTree = "<group>"; };
+		96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddChoreViewController.mm; sourceTree = "<group>"; };
+		96EDB86B1ED51A72008FA98E /* ChoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoresTableViewController.h; sourceTree = "<group>"; };
+		96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoresTableViewController.mm; sourceTree = "<group>"; };
+		96EDB86E1ED51AFE008FA98E /* Chore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chore.cpp; sourceTree = "<group>"; };
+		96EDB86F1ED51AFE008FA98E /* Chore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chore.hpp; sourceTree = "<group>"; };
+		96FBB0261ED6671E00F7E119 /* AddNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoticeViewController.h; sourceTree = "<group>"; };
+		96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddNoticeViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +133,11 @@
 				6205E1461ED3E13700DD487F /* AppDelegate.h */,
 				6205E1471ED3E13700DD487F /* AppDelegate.mm */,
 				6205E1481ED3E13700DD487F /* LaunchScreen.storyboard */,
-				6205E1491ED3E13700DD487F /* ListWrapper.cpp */,
 				6205E14A1ED3E13700DD487F /* ListWrapper.hpp */,
+				6205E1491ED3E13700DD487F /* ListWrapper.cpp */,
 				6205E14B1ED3E13700DD487F /* Main.storyboard */,
+				96FBB0261ED6671E00F7E119 /* AddNoticeViewController.h */,
+				96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */,
 				6205E14C1ED3E13700DD487F /* Notice.cpp */,
 				6205E14D1ED3E13700DD487F /* Notice.hpp */,
 				6205E14E1ED3E13700DD487F /* NoticesTableViewController.h */,
@@ -133,6 +150,14 @@
 				6205E11F1ED3E0E000DD487F /* Assets.xcassets */,
 				6205E1241ED3E0E000DD487F /* Info.plist */,
 				6205E1131ED3E0E000DD487F /* Supporting Files */,
+				96EDB86B1ED51A72008FA98E /* ChoresTableViewController.h */,
+				96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */,
+				96EDB86F1ED51AFE008FA98E /* Chore.hpp */,
+				96EDB86E1ED51AFE008FA98E /* Chore.cpp */,
+				96AB1C9E1ED523110074C597 /* ChoreViewCell.h */,
+				96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */,
+				96AB1CA11ED52E630074C597 /* AddChoreViewController.h */,
+				96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */,
 			);
 			path = v9;
 			sourceTree = "<group>";
@@ -298,11 +323,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6205E1551ED3E13700DD487F /* AppDelegate.mm in Sources */,
+				96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */,
+				96EDB86D1ED51A72008FA98E /* ChoresTableViewController.mm in Sources */,
+				96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */,
 				6205E1591ED3E13700DD487F /* Notice.cpp in Sources */,
 				6205E15D1ED3E13700DD487F /* ViewController.mm in Sources */,
+				96FBB0281ED6671E00F7E119 /* AddNoticeViewController.mm in Sources */,
 				6205E1571ED3E13700DD487F /* ListWrapper.cpp in Sources */,
 				6205E15B1ED3E13700DD487F /* NotificationViewCell.mm in Sources */,
 				6205E15F1ED3E15500DD487F /* main.m in Sources */,
+				96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */,
 				6205E15A1ED3E13700DD487F /* NoticesTableViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +546,7 @@
 				6205E13F1ED3E0E100DD487F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6205E1401ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "v9Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +555,7 @@
 				6205E1421ED3E0E100DD487F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6205E1431ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "v9UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +564,7 @@
 				6205E1451ED3E0E100DD487F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
