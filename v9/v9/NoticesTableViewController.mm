@@ -88,6 +88,15 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     list->noticeList.erase(list->noticeList.begin() +  indexPath.row);
+    
+    for(int i = (int)indexPath.row+1; i <= list->returnNoticeListSize(); i++){
+        printf("%d", i);
+        NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"NoticeName"]];
+        [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"]];
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
+    
+     [[NSUserDefaults standardUserDefaults] synchronize];
     [tableView reloadData];
 }
 

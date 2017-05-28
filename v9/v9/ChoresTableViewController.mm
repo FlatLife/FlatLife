@@ -74,7 +74,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:time forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreTime"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnChoreListSize()] forKey:@"choreSize"];
-    
+     [[NSUserDefaults standardUserDefaults] synchronize];
     [tableView reloadData];
     
 }

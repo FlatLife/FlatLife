@@ -23,6 +23,7 @@ public:
     static vector<Notice> noticeList;
     void setNoticeObjectValues(string noticeString);
     long returnNoticeListSize();
+    string returnStringNoticeListSize();
     
     static vector<Chore> choreList;
     void setChoreObjectValues(string choreString, string timeString);

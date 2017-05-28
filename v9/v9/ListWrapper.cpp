@@ -46,3 +46,11 @@ string ListWrapper::returnStringChoreListSize() {
     stream >> size;
     return size;
 }
+
+string ListWrapper::returnStringNoticeListSize() {
+    stringstream stream;
+    string size;
+    stream << noticeList.size();
+    stream >> size;
+    return size;
+}

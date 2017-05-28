@@ -43,7 +43,7 @@
         list->setNoticeObjectValues(objectString);
         
         //sets up the strings to be stored locally.
-        NSString *keyName = [[NSString stringWithCString:list->returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"NoticeName"];
+        NSString *keyName = [[NSString stringWithCString:list->returnStringNoticeListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"NoticeName"];
         
         //stores the strings with the correct key.
         [[NSUserDefaults standardUserDefaults] setObject:fieldText forKey:keyName];
