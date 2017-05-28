@@ -3,3 +3,10 @@ osx_image: "xcode8.2"
 xcode_project: v9/v9.xcodeproj # path to your xcodeproj folder
 xcode_scheme: v9
 xcode_sdk: iphonesimulator10.2
+
+before_script:
+    brew update
+    brew install xctool
+
+script:
+    xcodebuild clean build -sdk iphonesimulator10.2 -project v9/v9.xcworkspace -scheme v9Tests CODE_SIGNING_REQUIRED=NO
