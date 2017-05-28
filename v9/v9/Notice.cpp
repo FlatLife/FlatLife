@@ -9,23 +9,16 @@
 #include "Notice.hpp"
 
 Notice::Notice() {
-    isComplete = false;
     noticeMessage = "";
 }
 
-Notice::Notice(bool isComplete, string noticeMessage) {
-    this->isComplete = isComplete;
+Notice::Notice(string noticeMessage) {
     this->noticeMessage = noticeMessage;
 }
     
 string Notice::getNoticeMessage() {
     return noticeMessage;
 }
-    
-bool Notice::getNoticeState() {
-    return isComplete;
-}
-
 
 
 

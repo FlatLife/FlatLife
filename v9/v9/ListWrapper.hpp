@@ -21,7 +21,7 @@ class ListWrapper {
 
 public:
     static vector<Notice> noticeList;
-    void setNoticeObjectValues(string noticeString, bool noticeState);
+    void setNoticeObjectValues(string noticeString);
     long returnNoticeListSize();
     
     static vector<Chore> choreList;

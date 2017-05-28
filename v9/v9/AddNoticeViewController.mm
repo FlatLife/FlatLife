@@ -38,11 +38,21 @@
 
 - (IBAction)saveButton {
     NSString *fieldText = noticeText.text;
-    if ([fieldText length] == 0) {
+    if ([fieldText length] > 0) {
+        string objectString = [fieldText cStringUsingEncoding:NSUTF8StringEncoding];
+        list->setNoticeObjectValues(objectString);
+        
+        //sets up the strings to be stored locally.
+        NSString *keyName = [[NSString stringWithCString:list->returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"NoticeName"];
+        
+        //stores the strings with the correct key.
+        [[NSUserDefaults standardUserDefaults] setObject:fieldText forKey:keyName];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
+        //saves the data.
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
         [self dismissViewControllerAnimated:YES completion:nil];
     } else {
-        string objectString = [fieldText cStringUsingEncoding:NSUTF8StringEncoding];
-        list->setNoticeObjectValues(objectString, false);
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }

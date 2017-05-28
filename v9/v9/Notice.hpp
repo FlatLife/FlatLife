@@ -18,12 +18,10 @@ using namespace std;
 class Notice {
     
 public:
-    bool isComplete;
     string noticeMessage;
     Notice();
-    Notice(bool isComplete, string noticeMessage);
+    Notice(string noticeMessage);
     string getNoticeMessage();
-    bool getNoticeState();
 };
 
 #endif /* Notice_hpp */

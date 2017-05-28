@@ -17,9 +17,9 @@ using namespace std;
 vector<Chore> ListWrapper::choreList;
 vector<Notice> ListWrapper::noticeList;
 
-void ListWrapper::setNoticeObjectValues(string objectString, bool objectState) {
+void ListWrapper::setNoticeObjectValues(string objectString) {
     noticeList.resize(returnNoticeListSize());
-    noticeList.push_back(*new Notice(objectState, objectString));
+    noticeList.push_back(*new Notice(objectString));
     printf("number of objects in list : %ld \n", returnNoticeListSize());
 }
 

@@ -24,6 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     list = new ListWrapper();
+    if(list->returnNoticeListSize() <= 0){
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"NoticeSize"] != nil){
+            NSInteger savedSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"NoticeSize"] longLongValue];
+            for(int i = 1; i <= savedSize; i++){
+                NSString *keyName = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"];
+                
+                
+                const char *_keyName = [[[NSUserDefaults standardUserDefaults]
+                                         stringForKey:keyName] cStringUsingEncoding:NSUTF8StringEncoding];
+                list->setNoticeObjectValues(_keyName);
+                
+            }
+        }
+    }
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
