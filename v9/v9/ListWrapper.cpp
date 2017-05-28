@@ -36,7 +36,6 @@ void ListWrapper::setChoreObjectValues(string choreString, string timeString) {
 
 long ListWrapper::returnChoreListSize() {
     return choreList.size();
-    
 }
 
 string ListWrapper::returnStringChoreListSize() {
