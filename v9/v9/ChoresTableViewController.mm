@@ -66,7 +66,17 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     list->choreList.erase(list->choreList.begin() +  indexPath.row);
+    for(int i = (int)indexPath.row+1; i <= list->returnChoreListSize(); i++){
+        printf("%d", i);
+        NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"choreName"]];
+        NSString *time = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"choreTime"]];
+        [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreName"]];
+        [[NSUserDefaults standardUserDefaults] setObject:time forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreTime"]];
+    }
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnChoreListSize()] forKey:@"choreSize"];
+    
     [tableView reloadData];
+    
 }
 
 #pragma mark - Table view data source
