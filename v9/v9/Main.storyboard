@@ -110,7 +110,7 @@
         <scene sceneID="1kQ-IQ-ENe">
             <objects>
                 <navigationController id="7an-x5-dMv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notices" id="4Dc-8j-SD4"/>
+                    <tabBarItem key="tabBarItem" title="Notices" image="notices" selectedImage="notices" id="4Dc-8j-SD4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNz-0Z-PGs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -153,7 +153,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Billing" id="8dY-A5-Jq5"/>
+                    <tabBarItem key="tabBarItem" title="Billing" image="billing" id="8dY-A5-Jq5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZiH-Dj-x0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,7 +282,7 @@
         <scene sceneID="0NF-Mn-jQp">
             <objects>
                 <navigationController id="5Fp-fI-53k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chores" id="yc6-zK-n9W"/>
+                    <tabBarItem key="tabBarItem" title="Chores" image="chores" id="yc6-zK-n9W"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i96-gO-vft">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -354,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-KJ-T1l">
-                                <rect key="frame" x="143" y="327" width="128" height="82"/>
+                                <rect key="frame" x="143" y="0.0" width="128" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
@@ -363,11 +363,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="wp8-Wl-N0T"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="wp8-Wl-N0T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBj-90-0Jq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767" y="-1771"/>
+            <point key="canvasLocation" x="2766.666666666667" y="-1771.467391304348"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SWg-2M-ZSC">
@@ -389,4 +389,10 @@
             <point key="canvasLocation" x="1562" y="-627"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="billing" width="30" height="30"/>
+        <image name="chores" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="notices" width="30" height="30"/>
+    </resources>
 </document>
