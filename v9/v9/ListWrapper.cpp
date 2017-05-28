@@ -7,6 +7,7 @@
 //
 
 #include <string>
+#include <sstream>
 #include "ListWrapper.hpp"
 #include "Notice.hpp"
 #include "Chore.hpp"
@@ -36,4 +37,12 @@ void ListWrapper::setChoreObjectValues(string choreString, string timeString) {
 long ListWrapper::returnChoreListSize() {
     return choreList.size();
     
+}
+
+string ListWrapper::returnStringChoreListSize() {
+    stringstream stream;
+    string size;
+    stream << choreList.size();
+    stream >> size;
+    return size;
 }

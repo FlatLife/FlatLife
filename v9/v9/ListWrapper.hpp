@@ -27,6 +27,7 @@ public:
     static vector<Chore> choreList;
     void setChoreObjectValues(string choreString, string timeString);
     long returnChoreListSize();
+    string returnStringChoreListSize();
 };
 
 #endif /* ListWrapper_hpp */
