@@ -24,21 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     list = new ListWrapper();
-    //NSLog(@"Testinggg");
-    //printf("%d", list->returnChoreListSize());
     if(list->returnChoreListSize() <= 0){
-        NSInteger savedSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"choreSize"] longLongValue];
-        for(int i = 1; i <= savedSize; i++){
-            NSString *keyName = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreName"];
-            NSString *keyTime = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreTime"];
-            
-            const char *_keyName = [[[NSUserDefaults standardUserDefaults]
-                                  stringForKey:keyName] cStringUsingEncoding:NSUTF8StringEncoding];
-            const char *_keyTime = [[[NSUserDefaults standardUserDefaults]
-                                  stringForKey:keyTime] cStringUsingEncoding:NSUTF8StringEncoding];
-            printf("%s", _keyName);
-            printf("%s", _keyTime);
-            list->setChoreObjectValues(_keyName, _keyTime);
+        if([[NSUserDefaults standardUserDefaults] objectForKey:@"choreSize"] != nil){
+            NSInteger savedSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"choreSize"] longLongValue];
+            for(int i = 1; i <= savedSize; i++){
+                NSString *keyName = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreName"];
+                NSString *keyTime = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreTime"];
+                
+                
+                const char *_keyName = [[[NSUserDefaults standardUserDefaults]
+                                         stringForKey:keyName] cStringUsingEncoding:NSUTF8StringEncoding];
+                const char *_keyTime = [[[NSUserDefaults standardUserDefaults]
+                                         stringForKey:keyTime] cStringUsingEncoding:NSUTF8StringEncoding];
+                list->setChoreObjectValues(_keyName, _keyTime);
+                 
+            }
         }
     }
     
