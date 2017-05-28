@@ -11,11 +11,12 @@
 #import "Notice.hpp"
 
 @interface v9Tests : XCTestCase
-    ListWrapper *list;
 
 @end
 
 @implementation v9Tests
+    ListWrapper *list;
+
 
 - (void)setUp {
     [super setUp];
@@ -46,9 +47,10 @@
 - (void)testAddChore{
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    list->setChoreObjectValues("Test");
-    XCTAssertEqual(1, list->returnNoticeListSize());
-    XCTAssertEqual("Test", list->noticeList[0].getNoticeMessage());
+    list->setChoreObjectValues("Test", "12:57am");
+    XCTAssertEqual(1, list->returnChoreListSize());
+    XCTAssertEqual("Test", list->choreList[0].getChoreName());
+    XCTAssertEqual("12:57am", list->choreList[0].getChoreTime());
 }
 
 //- (void)testPerformanceExample {

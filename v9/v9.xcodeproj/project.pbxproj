@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6205E1201ED3E0E000DD487F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6205E11F1ED3E0E000DD487F /* Assets.xcassets */; };
-		6205E12E1ED3E0E100DD487F /* v9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E12D1ED3E0E100DD487F /* v9Tests.m */; };
+		6205E12E1ED3E0E100DD487F /* v9Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6205E12D1ED3E0E100DD487F /* v9Tests.mm */; };
 		6205E1391ED3E0E100DD487F /* v9UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E1381ED3E0E100DD487F /* v9UITests.m */; };
 		6205E1551ED3E13700DD487F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6205E1471ED3E13700DD487F /* AppDelegate.mm */; };
 		6205E1561ED3E13700DD487F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6205E1481ED3E13700DD487F /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		6205E11F1ED3E0E000DD487F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6205E1241ED3E0E000DD487F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6205E1291ED3E0E100DD487F /* v9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = v9Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6205E12D1ED3E0E100DD487F /* v9Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = v9Tests.m; sourceTree = "<group>"; };
+		6205E12D1ED3E0E100DD487F /* v9Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = v9Tests.mm; sourceTree = "<group>"; };
 		6205E12F1ED3E0E100DD487F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6205E1341ED3E0E100DD487F /* v9UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = v9UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205E1381ED3E0E100DD487F /* v9UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = v9UITests.m; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		6205E12C1ED3E0E100DD487F /* v9Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6205E12D1ED3E0E100DD487F /* v9Tests.m */,
+				6205E12D1ED3E0E100DD487F /* v9Tests.mm */,
 				6205E12F1ED3E0E100DD487F /* Info.plist */,
 			);
 			path = v9Tests;
@@ -341,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6205E12E1ED3E0E100DD487F /* v9Tests.m in Sources */,
+				6205E12E1ED3E0E100DD487F /* v9Tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
