@@ -25,7 +25,7 @@ ListWrapper list = *new ListWrapper();
 @implementation AddChoreViewController
 
 @synthesize choreTextField;
-@synthesize datePicker;
+@synthesize timePicker;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,9 +44,8 @@ ListWrapper list = *new ListWrapper();
         
         NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
         [outputFormatter setDateFormat:@"h:mm a"];
-        [outputFormatter stringFromDate:self.datePicker.date];
         
-        list.setChoreObjectValues([fieldText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding]);
+        list.setChoreObjectValues([fieldText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.timePicker.date] cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.
         NSString *keyName = [[NSString stringWithCString:list.returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"choreName"];
@@ -54,8 +53,9 @@ ListWrapper list = *new ListWrapper();
         
         //stores the strings with the correct key.
         [[NSUserDefaults standardUserDefaults] setObject:fieldText forKey:keyName];
-        [[NSUserDefaults standardUserDefaults] setObject:[outputFormatter stringFromDate:self.datePicker.date] forKey:keyTime];
+        [[NSUserDefaults standardUserDefaults] setObject:[outputFormatter stringFromDate:self.timePicker.date] forKey:keyTime];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list.returnChoreListSize()] forKey:@"choreSize"];
+        
         //saves the data.
         [[NSUserDefaults standardUserDefaults] synchronize];
         

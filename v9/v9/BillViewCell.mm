@@ -1,15 +1,15 @@
 //
-//  ChoreViewCell.mm
+//  BillViewCell.m
 //  v9
 //
-//  Created by Gavin Trebilcock on 5/24/17.
+//  Created by Gavin Trebilcock on 5/29/17.
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 
-#import "ChoreViewCell.h"
+#import "BillViewCell.h"
 
 
-@implementation ChoreViewCell
+@implementation BillViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

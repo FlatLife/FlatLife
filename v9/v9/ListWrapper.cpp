@@ -11,26 +11,38 @@
 #include "ListWrapper.hpp"
 #include "Notice.hpp"
 #include "Chore.hpp"
+#include "Bill.hpp"
 
 using namespace std;
 
 vector<Chore> ListWrapper::choreList;
 vector<Notice> ListWrapper::noticeList;
+vector<Bill> ListWrapper::billList;
 
+
+//NOTICES
 void ListWrapper::setNoticeObjectValues(string objectString) {
     noticeList.resize(returnNoticeListSize());
     noticeList.push_back(*new Notice(objectString));
-    printf("number of objects in list : %ld \n", returnNoticeListSize());
 }
 
 long ListWrapper::returnNoticeListSize() {
     return noticeList.size();
 }
 
+string ListWrapper::returnStringNoticeListSize() {
+    stringstream stream;
+    string size;
+    stream << noticeList.size();
+    stream >> size;
+    return size;
+}
+
+
+//CHORES
 void ListWrapper::setChoreObjectValues(string choreString, string timeString) {
     choreList.resize(returnChoreListSize());
     choreList.push_back(*new Chore(choreString, timeString));
-    printf("list size is: %ld \n", returnChoreListSize());
 }
 
 
@@ -46,10 +58,33 @@ string ListWrapper::returnStringChoreListSize() {
     return size;
 }
 
-string ListWrapper::returnStringNoticeListSize() {
+
+//BILLS
+void ListWrapper::setBillObjectValues(string billName, string billDate, string cost) {
+    billList.resize(returnBillListSize());
+    billList.push_back(*new Bill(billName, billDate, cost));
+}
+
+long ListWrapper::returnBillListSize() {
+    return billList.size();
+}
+
+string ListWrapper::returnStringBillListSize() {
     stringstream stream;
     string size;
-    stream << noticeList.size();
+    stream << billList.size();
     stream >> size;
     return size;
 }
+
+
+
+
+
+
+
+
+
+
+
+

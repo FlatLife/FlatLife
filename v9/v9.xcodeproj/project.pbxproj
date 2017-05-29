@@ -23,6 +23,10 @@
 		625E1B9C1EDAB77A00EEB86D /* CustomTwoTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */; };
 		96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */; };
 		96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */; };
+		96DA5A341EDBA6BF0042FBD6 /* Bill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A321EDBA6BF0042FBD6 /* Bill.cpp */; };
+		96DA5A371EDBB08B0042FBD6 /* AddBillViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A361EDBB08B0042FBD6 /* AddBillViewController.mm */; };
+		96DA5A3A1EDBB09E0042FBD6 /* BillsTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A391EDBB09E0042FBD6 /* BillsTableViewController.mm */; };
+		96DA5A3D1EDBC1D40042FBD6 /* BillViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A3C1EDBC1D40042FBD6 /* BillViewCell.mm */; };
 		96EDB86D1ED51A72008FA98E /* ChoresTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */; };
 		96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86E1ED51AFE008FA98E /* Chore.cpp */; };
 		96FBB0281ED6671E00F7E119 /* AddNoticeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */; };
@@ -77,6 +81,14 @@
 		96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoreViewCell.mm; sourceTree = "<group>"; };
 		96AB1CA11ED52E630074C597 /* AddChoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChoreViewController.h; sourceTree = "<group>"; };
 		96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddChoreViewController.mm; sourceTree = "<group>"; };
+		96DA5A321EDBA6BF0042FBD6 /* Bill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bill.cpp; sourceTree = "<group>"; };
+		96DA5A331EDBA6BF0042FBD6 /* Bill.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bill.hpp; sourceTree = "<group>"; };
+		96DA5A351EDBB08B0042FBD6 /* AddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBillViewController.h; sourceTree = "<group>"; };
+		96DA5A361EDBB08B0042FBD6 /* AddBillViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddBillViewController.mm; sourceTree = "<group>"; };
+		96DA5A381EDBB09E0042FBD6 /* BillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillsTableViewController.h; sourceTree = "<group>"; };
+		96DA5A391EDBB09E0042FBD6 /* BillsTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BillsTableViewController.mm; sourceTree = "<group>"; };
+		96DA5A3B1EDBC1D40042FBD6 /* BillViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillViewCell.h; sourceTree = "<group>"; };
+		96DA5A3C1EDBC1D40042FBD6 /* BillViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BillViewCell.mm; sourceTree = "<group>"; };
 		96EDB86B1ED51A72008FA98E /* ChoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoresTableViewController.h; sourceTree = "<group>"; };
 		96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoresTableViewController.mm; sourceTree = "<group>"; };
 		96EDB86E1ED51AFE008FA98E /* Chore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chore.cpp; sourceTree = "<group>"; };
@@ -152,6 +164,8 @@
 				6205E1541ED3E13700DD487F /* ViewController.mm */,
 				6205E11F1ED3E0E000DD487F /* Assets.xcassets */,
 				6205E1241ED3E0E000DD487F /* Info.plist */,
+				625E1B9A1EDAB77A00EEB86D /* CustomTwoTableViewController.h */,
+				625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */,
 				6205E1131ED3E0E000DD487F /* Supporting Files */,
 				96EDB86B1ED51A72008FA98E /* ChoresTableViewController.h */,
 				96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */,
@@ -161,8 +175,14 @@
 				96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */,
 				96AB1CA11ED52E630074C597 /* AddChoreViewController.h */,
 				96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */,
-				625E1B9A1EDAB77A00EEB86D /* CustomTwoTableViewController.h */,
-				625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */,
+				96DA5A321EDBA6BF0042FBD6 /* Bill.cpp */,
+				96DA5A331EDBA6BF0042FBD6 /* Bill.hpp */,
+				96DA5A3B1EDBC1D40042FBD6 /* BillViewCell.h */,
+				96DA5A3C1EDBC1D40042FBD6 /* BillViewCell.mm */,
+				96DA5A351EDBB08B0042FBD6 /* AddBillViewController.h */,
+				96DA5A361EDBB08B0042FBD6 /* AddBillViewController.mm */,
+				96DA5A381EDBB09E0042FBD6 /* BillsTableViewController.h */,
+				96DA5A391EDBB09E0042FBD6 /* BillsTableViewController.mm */,
 			);
 			path = v9;
 			sourceTree = "<group>";
@@ -329,17 +349,21 @@
 			files = (
 				6205E1551ED3E13700DD487F /* AppDelegate.mm in Sources */,
 				96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */,
+				96DA5A3A1EDBB09E0042FBD6 /* BillsTableViewController.mm in Sources */,
 				96EDB86D1ED51A72008FA98E /* ChoresTableViewController.mm in Sources */,
 				96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */,
 				625E1B9C1EDAB77A00EEB86D /* CustomTwoTableViewController.mm in Sources */,
 				6205E1591ED3E13700DD487F /* Notice.cpp in Sources */,
 				6205E15D1ED3E13700DD487F /* ViewController.mm in Sources */,
 				96FBB0281ED6671E00F7E119 /* AddNoticeViewController.mm in Sources */,
+				96DA5A3D1EDBC1D40042FBD6 /* BillViewCell.mm in Sources */,
+				96DA5A341EDBA6BF0042FBD6 /* Bill.cpp in Sources */,
 				6205E1571ED3E13700DD487F /* ListWrapper.cpp in Sources */,
 				6205E15B1ED3E13700DD487F /* NotificationViewCell.mm in Sources */,
 				6205E15F1ED3E15500DD487F /* main.m in Sources */,
 				96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */,
 				6205E15A1ED3E13700DD487F /* NoticesTableViewController.mm in Sources */,
+				96DA5A371EDBB08B0042FBD6 /* AddBillViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

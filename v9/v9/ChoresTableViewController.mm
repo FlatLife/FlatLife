@@ -9,7 +9,6 @@
 #import "ChoresTableViewController.h"
 #import "Chore.hpp"
 #import "ListWrapper.hpp"
-#import <string>
 
 @interface ChoresTableViewController () {
     ListWrapper *list;
@@ -57,7 +56,8 @@
         [[NSUserDefaults standardUserDefaults] setObject:time forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"choreTime"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnChoreListSize()] forKey:@"choreSize"];
-     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [tableView reloadData];
     
 }

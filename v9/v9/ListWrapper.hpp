@@ -13,6 +13,7 @@
 #include <vector>
 #import "Notice.hpp"
 #import "Chore.hpp"
+#import "Bill.hpp"
 
 
 using namespace std;
@@ -29,6 +30,11 @@ public:
     void setChoreObjectValues(string choreString, string timeString);
     long returnChoreListSize();
     string returnStringChoreListSize();
+
+    static vector<Bill> billList;
+    void setBillObjectValues(string billName, string billDate, string cost);
+    long returnBillListSize();
+    string returnStringBillListSize();
 };
 
 #endif /* ListWrapper_hpp */

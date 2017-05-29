@@ -11,7 +11,7 @@
 @interface AddChoreViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *choreTextField;
-@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong, nonatomic) IBOutlet UIDatePicker *timePicker;
 
 - (IBAction)addChore;
 - (IBAction)cancelAdd;
