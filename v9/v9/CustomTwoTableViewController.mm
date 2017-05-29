@@ -116,6 +116,9 @@
     // Configure the cell...
     if (tableView == self.firstTable) {
         cell.textLabel.text = [NSString stringWithFormat:@"First Table"];
+        cell.textLabel.font = [UIFont fontWithName:@"Avenir Next Demi Bold" size:16.0f];
+        cell.textLabel.textColor =
+        [UIColor colorWithRed:75.0/255.0 green:75.0/255.0 blue:75.0/255.0 alpha:1];
         
         // E R R O R V VV V V
         Chore chore = list->choreList[indexPath.row];
@@ -126,7 +129,9 @@
     
     if (tableView == self.secondTable) {
         cell2.textLabel.text = [NSString stringWithFormat:@"Second Table"];
-        
+        cell2.textLabel.font = [UIFont fontWithName:@"Avenir Next Demi Bold" size:16.0f];
+        cell2.textLabel.textColor =
+        [UIColor colorWithRed:75.0/255.0 green:75.0/255.0 blue:75.0/255.0 alpha:1];
         // E R R O R V VV V V
         Notice notice = list->noticeList[indexPath.row];
         cell2.textLabel.text = [NSString stringWithCString:notice.getNoticeMessage().c_str() encoding:[NSString defaultCStringEncoding]];
