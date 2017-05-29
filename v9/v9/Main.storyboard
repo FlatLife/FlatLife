@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jCF-H1-tQZ" id="FSE-aQ-kgc">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
@@ -136,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PF3-7T-3Jr" id="rki-De-gqm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="ChoreCell">
@@ -220,20 +220,14 @@
                                 <action selector="cancelAdd" destination="dkc-HQ-Ju8" id="ZhD-Ar-4fQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" id="vCJ-EN-8uc">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yu3-Tq-SDa">
-                                <rect key="frame" x="309" y="2" width="50" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="addChore" destination="dkc-HQ-Ju8" eventType="touchUpInside" id="HUx-5y-mVh"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="vCJ-EN-8uc">
+                            <connections>
+                                <action selector="addChore" destination="dkc-HQ-Ju8" id="a7z-Tr-wfY"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addChore" destination="Yu3-Tq-SDa" id="FYt-Vb-oRJ"/>
+                        <outlet property="addChore" destination="vCJ-EN-8uc" id="oHI-Xi-v0Q"/>
                         <outlet property="cancelAdd" destination="P7t-ig-6W9" id="m2N-xn-khK"/>
                         <outlet property="choreTextField" destination="riQ-DS-yYx" id="ZIg-ZB-Qhx"/>
                         <outlet property="timePicker" destination="HC5-oV-Ncg" id="Umu-Ik-rpt"/>
@@ -322,16 +316,10 @@
                                 <action selector="cancelCreate" destination="tL2-DI-0vB" id="6jf-Jv-ISC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" id="yPj-1h-78z">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JqW-kH-bc0">
-                                <rect key="frame" x="289" y="-2" width="70" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Create"/>
-                                <connections>
-                                    <action selector="createBill" destination="tL2-DI-0vB" eventType="touchUpInside" id="SFr-jc-XwF"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="yPj-1h-78z">
+                            <connections>
+                                <action selector="createBill" destination="tL2-DI-0vB" id="Mle-vq-8oT"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -374,7 +362,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JFr-lb-sTs" id="jlu-zz-Dgl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="BillsCell">

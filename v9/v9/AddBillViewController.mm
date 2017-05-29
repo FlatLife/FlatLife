@@ -12,7 +12,7 @@
 
 @interface AddBillViewController ()
 {
-    IBOutlet UIButton *createBill;
+    IBOutlet UIBarButtonItem *createBill;
     IBOutlet UIBarButtonItem *cancelCreate;
 }
 

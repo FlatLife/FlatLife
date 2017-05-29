@@ -12,7 +12,8 @@
 
 @interface AddChoreViewController ()
 {
-    IBOutlet UIButton *addChore;
+    IBOutlet UIBarButtonItem *addChore;
+    //IBOutlet UIButton *addChore;
     IBOutlet UIBarButtonItem *cancelAdd;
     
     
