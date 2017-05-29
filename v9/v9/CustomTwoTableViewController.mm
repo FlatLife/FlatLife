@@ -2,7 +2,7 @@
 //  CustomTwoTableViewController.m
 //  v9
 //
-//  Created by Max Newall on 5/28/17.
+//  Created by Gavin Trebilcock, Josh Lieshout, Max Newall and Shaye Mckay on 5/28/17.
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 

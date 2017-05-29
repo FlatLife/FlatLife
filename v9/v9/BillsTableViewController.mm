@@ -2,7 +2,7 @@
 //  BillsTableViewController.m
 //  v9
 //
-//  Created by Gavin Trebilcock on 5/29/17.
+//  Created by Gavin Trebilcock, Josh Lieshout, Max Newall and Shaye Mckay on 5/29/17.
 //  Copyright © 2017 Max Newall. All rights reserved.
 //
 
@@ -63,6 +63,7 @@
     return YES;
 }
 
+// method called when user presses the delte button on a specific cell. it then deletes all the data for that cell and then reloads the table data.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     list->billList.erase(list->billList.begin() +  indexPath.row);
