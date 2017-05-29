@@ -5,4 +5,4 @@ xcode_scheme: v9
 xcode_sdk: iphonesimulator10.2
 
 script:
-    xcodebuild clean test -sdk iphonesimulator10.2 -project v9/v9.xcodeproj -scheme v9 CODE_SIGNING_REQUIRED=NO
+    xcodebuild clean test -sdk iphonesimulator10.2 -project v9/v9.xcodeproj -scheme v9 -destination 'platform=Simulator,name=iPhone,OS=10.2’ CODE_SIGNING_REQUIRED=NO
