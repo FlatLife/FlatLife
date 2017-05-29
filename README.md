@@ -5,7 +5,6 @@ FlatLife is an app for students and others who live in communal living environme
 
 ## Building for iOS
 
-This app only supports development in Xcode 8.2 on Mac OS X Sierra.
 
 1. Install the latest Xcode developer tools
 1. Open v9.xcodeproj in Xcode
