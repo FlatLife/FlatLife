@@ -4,10 +4,10 @@ xcode_project: v9/v9.xcodeproj # path to your xcodeproj folder
 xcode_scheme: v9
 
 script:
-  - xcodebuild test \
-    -project v9/v9.xcodeproj \
-    -scheme v9 \
-    -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.2' \
+  - xcodebuild test
+    -project v9/v9.xcodeproj
+    -scheme v9
+    -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.2'
     -enableCodeCoverage YES
     
 after_success:
