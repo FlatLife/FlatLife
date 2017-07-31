@@ -21,6 +21,7 @@
 		6205E15D1ED3E13700DD487F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6205E1541ED3E13700DD487F /* ViewController.mm */; };
 		6205E15F1ED3E15500DD487F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E15E1ED3E15500DD487F /* main.m */; };
 		625E1B9C1EDAB77A00EEB86D /* CustomTwoTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */; };
+		9600A9DB1F2AC1D6001640CC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */; };
 		96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */; };
 		96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */; };
 		96DA5A341EDBA6BF0042FBD6 /* Bill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A321EDBA6BF0042FBD6 /* Bill.cpp */; };
@@ -77,6 +78,7 @@
 		6205E15E1ED3E15500DD487F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		625E1B9A1EDAB77A00EEB86D /* CustomTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTwoTableViewController.h; sourceTree = "<group>"; };
 		625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomTwoTableViewController.mm; sourceTree = "<group>"; };
+		9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		96AB1C9E1ED523110074C597 /* ChoreViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreViewCell.h; sourceTree = "<group>"; };
 		96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoreViewCell.mm; sourceTree = "<group>"; };
 		96AB1CA11ED52E630074C597 /* AddChoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChoreViewController.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9600A9DB1F2AC1D6001640CC /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +132,7 @@
 				6205E12C1ED3E0E100DD487F /* v9Tests */,
 				6205E1371ED3E0E100DD487F /* v9UITests */,
 				6205E1111ED3E0E000DD487F /* Products */,
+				9600A9D91F2AC1D6001640CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +215,14 @@
 				6205E13A1ED3E0E100DD487F /* Info.plist */,
 			);
 			path = v9UITests;
+			sourceTree = "<group>";
+		};
+		9600A9D91F2AC1D6001640CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
