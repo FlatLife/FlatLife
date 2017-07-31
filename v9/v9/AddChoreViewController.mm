@@ -51,6 +51,7 @@ ListWrapper list = *new ListWrapper();
         _localNotification.body = [NSString localizedUserNotificationStringForKey:fieldText arguments:nil];
         _localNotification.sound = [UNNotificationSound defaultSound];
         
+        //setting the correct time for the notification
         NSDate *chosen = [timePicker date];
         NSDateComponents* triggerTime = [[NSDateComponents alloc] init];
         NSCalendar *calender = [NSCalendar currentCalendar];
@@ -69,6 +70,7 @@ ListWrapper list = *new ListWrapper();
                 NSLog(@"Add NotificationRequest succeeded!");
             }
         }];
+        
         list.setChoreObjectValues([fieldText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.timePicker.date] cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.

@@ -45,6 +45,31 @@ ListWrapper listObj = *new ListWrapper();
         [outputFormatter setDateFormat:@"EEE, d MMM yyyy"];
         [outputFormatter stringFromDate:self.datePicker.date];
         
+        //setting the notification for the chore.
+        _localNotification  = [[UNMutableNotificationContent alloc] init];
+        _localNotification.title = [NSString localizedUserNotificationStringForKey:@"Reminder For Payment!" arguments:nil];
+        _localNotification.body = [NSString localizedUserNotificationStringForKey:nameText arguments:nil];
+        _localNotification.sound = [UNNotificationSound defaultSound];
+        
+        //setting the correct time for the notification
+        NSDate *chosen = [datePicker date];
+        NSCalendar *calender = [NSCalendar currentCalendar];
+        NSDateComponents* triggerDate = [calender components:(NSCalendarUnitDay | NSCalendarUnitWeekday) fromDate:chosen];
+        triggerDate.hour = 16;
+        triggerDate.minute = 07;
+        
+        UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:triggerDate repeats:YES];
+        
+        _localNotification.badge =@([[UIApplication sharedApplication] applicationIconBadgeNumber] +1);
+        //schedule:
+        UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:@"Time Down" content: _localNotification trigger:trigger];
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            if (!error){
+                NSLog(@"Add NotificationRequest succeeded!");
+            }
+        }];
+        
         listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.

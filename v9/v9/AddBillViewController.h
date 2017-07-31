@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @interface AddBillViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (strong, nonatomic) IBOutlet UITextField *nameField;
 @property (strong, nonatomic) IBOutlet UITextField *amountField;
+@property (strong, nonatomic) UNMutableNotificationContent *localNotification;
 
 
 - (IBAction)createBill;
