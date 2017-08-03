@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
-@interface AddChoreViewController : UIViewController
+@interface AddChoreViewController : UIViewController<UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *choreTextField;
 @property (strong, nonatomic) IBOutlet UIDatePicker *timePicker;
