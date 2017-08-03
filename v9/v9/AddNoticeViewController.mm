@@ -26,11 +26,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     noticeText.delegate=self;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+-(void)dismissKeyboard {
+    [self.view endEditing:true];
 }
 
 - (void)didReceiveMemoryWarning {
