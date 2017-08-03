@@ -22,6 +22,7 @@
 		6205E15F1ED3E15500DD487F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E15E1ED3E15500DD487F /* main.m */; };
 		625E1B9C1EDAB77A00EEB86D /* CustomTwoTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */; };
 		9600A9DB1F2AC1D6001640CC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */; };
+		96075D191F32DF9800377516 /* BillDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96075D181F32DF9800377516 /* BillDetailViewController.mm */; };
 		96AB1CA01ED523110074C597 /* ChoreViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */; };
 		96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CA21ED52E630074C597 /* AddChoreViewController.mm */; };
 		96DA5A341EDBA6BF0042FBD6 /* Bill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DA5A321EDBA6BF0042FBD6 /* Bill.cpp */; };
@@ -79,6 +80,8 @@
 		625E1B9A1EDAB77A00EEB86D /* CustomTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTwoTableViewController.h; sourceTree = "<group>"; };
 		625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomTwoTableViewController.mm; sourceTree = "<group>"; };
 		9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		96075D171F32DF9800377516 /* BillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillDetailViewController.h; sourceTree = "<group>"; };
+		96075D181F32DF9800377516 /* BillDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BillDetailViewController.mm; sourceTree = "<group>"; };
 		96AB1C9E1ED523110074C597 /* ChoreViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreViewCell.h; sourceTree = "<group>"; };
 		96AB1C9F1ED523110074C597 /* ChoreViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoreViewCell.mm; sourceTree = "<group>"; };
 		96AB1CA11ED52E630074C597 /* AddChoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChoreViewController.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				96DA5A361EDBB08B0042FBD6 /* AddBillViewController.mm */,
 				96DA5A381EDBB09E0042FBD6 /* BillsTableViewController.h */,
 				96DA5A391EDBB09E0042FBD6 /* BillsTableViewController.mm */,
+				96075D171F32DF9800377516 /* BillDetailViewController.h */,
+				96075D181F32DF9800377516 /* BillDetailViewController.mm */,
 			);
 			path = v9;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96075D191F32DF9800377516 /* BillDetailViewController.mm in Sources */,
 				6205E1551ED3E13700DD487F /* AppDelegate.mm in Sources */,
 				96AB1CA31ED52E630074C597 /* AddChoreViewController.mm in Sources */,
 				96DA5A3A1EDBB09E0042FBD6 /* BillsTableViewController.mm in Sources */,
