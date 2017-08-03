@@ -71,9 +71,15 @@ ListWrapper listObj = *new ListWrapper();
         //setting the correct time for the notification
         NSDate *chosen = [datePicker date];
         NSCalendar *calender = [NSCalendar currentCalendar];
-        NSDateComponents* triggerDate = [calender components:(NSCalendarUnitDay | NSCalendarUnitWeekday) fromDate:chosen];
-        triggerDate.hour = 16;
-        triggerDate.minute = 07;
+        NSDateComponents* triggerDate = [[NSDateComponents alloc] init];
+        NSDateComponents *components = [calender components:(NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:chosen];
+        [components setHour:10];
+        [components setMinute:00];
+        triggerDate.hour = [components hour];
+        triggerDate.minute = [components minute];
+        triggerDate.day = [components day];
+        triggerDate.month = [components month];
+        triggerDate.year = [components year];
         
         UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:triggerDate repeats:YES];
         
