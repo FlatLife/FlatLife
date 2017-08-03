@@ -9,6 +9,7 @@ script:
     -scheme v9
     -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.2'
     -enableCodeCoverage YES
-    
+    -configuration Debug
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
