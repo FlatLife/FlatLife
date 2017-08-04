@@ -79,7 +79,10 @@ ListWrapper list = *new ListWrapper();
         
         _localNotification.badge =@([[UIApplication sharedApplication] applicationIconBadgeNumber] +1);
         //schedule:
-        UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:@"Time Down" content: _localNotification trigger:trigger];
+        NSNumber *uidNum = [NSNumber numberWithInteger:[NSDate timeIntervalSinceReferenceDate] * 10000];
+        NSString *uid = [uidNum stringValue];
+        NSLog(@"%@", uid);
+        UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:uid content: _localNotification trigger:trigger];
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
             if (!error){
@@ -92,10 +95,12 @@ ListWrapper list = *new ListWrapper();
         //sets up the strings to be stored locally.
         NSString *keyName = [[NSString stringWithCString:list.returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"choreName"];
         NSString *keyTime = [[NSString stringWithCString:list.returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"choreTime"];
+        NSString *keyNotif = [[NSString stringWithCString:list.returnStringChoreListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"choreNotif"];
         
         //stores the strings with the correct key.
         [[NSUserDefaults standardUserDefaults] setObject:fieldText forKey:keyName];
         [[NSUserDefaults standardUserDefaults] setObject:[outputFormatter stringFromDate:self.timePicker.date] forKey:keyTime];
+        [[NSUserDefaults standardUserDefaults] setObject:uid forKey:keyNotif];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list.returnChoreListSize()] forKey:@"choreSize"];
         
         //saves the data.
