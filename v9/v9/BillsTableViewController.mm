@@ -7,6 +7,7 @@
 //
 
 #import "BillsTableViewController.h"
+#import "BillDetailViewController.h"
 #import "ListWrapper.hpp"
 #import "Bill.hpp"
 
@@ -63,7 +64,37 @@
     return YES;
 }
 
-// method called when user presses the delte button on a specific cell. it then deletes all the data for that cell and then reloads the table data.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ShowDetail" sender:tableView];
+}
+
+//preparing for the transition to the BillsDetailViewController
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+        //Pass the variables to the new controller.
+        BillDetailViewController *vc = [segue destinationViewController];
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        Bill bill = list->billList[path.row];
+        NSString *billName = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billName"];
+        NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billDate"];
+        NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billAmount"];
+        vc.nameLabel.text = [[NSUserDefaults standardUserDefaults]
+                              stringForKey:billName];
+        NSLog(@"HERE");
+        NSLog(@"%@", vc.nameLabel.text);
+        NSLog(@"%ld", (long)path.row);
+        vc.paidLabel.text = [[NSUserDefaults standardUserDefaults]
+                             stringForKey:billDate];
+        vc.totalLabel.text = [[NSUserDefaults standardUserDefaults]
+                              stringForKey:billAmount];
+        
+        
+    }
+}
+
+// method called when user presses the delete button on a specific cell. it then deletes all the data for that cell and then reloads the table data.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     list->billList.erase(list->billList.begin() +  indexPath.row);

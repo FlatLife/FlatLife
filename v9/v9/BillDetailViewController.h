@@ -10,4 +10,12 @@
 
 @interface BillDetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *paidLabel;
+@property (strong, nonatomic) IBOutlet UILabel *totalLabel;
+@property (strong, nonatomic) IBOutlet UITextField *paymentField;
+
+- (IBAction)saveBill;
+- (IBAction)updateBill;
+
 @end

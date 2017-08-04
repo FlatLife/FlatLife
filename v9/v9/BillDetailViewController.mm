@@ -14,6 +14,11 @@
 
 @implementation BillDetailViewController
 
+@synthesize nameLabel;
+@synthesize paidLabel;
+@synthesize totalLabel;
+@synthesize paymentField;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -24,7 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)updatePayment {
+- (IBAction)updateBill {
     //implement
     //add paid amount to the current bill object
 }
