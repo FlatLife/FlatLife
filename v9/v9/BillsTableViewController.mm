@@ -76,19 +76,16 @@
         //Pass the variables to the new controller.
         BillDetailViewController *vc = [segue destinationViewController];
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        Bill bill = list->billList[path.row];
-        NSString *billName = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billName"];
-        NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billDate"];
-        NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row] stringByAppendingString:@"billAmount"];
-        vc.nameLabel.text = [[NSUserDefaults standardUserDefaults]
-                              stringForKey:billName];
-        NSLog(@"HERE");
-        NSLog(@"%@", vc.nameLabel.text);
-        NSLog(@"%ld", (long)path.row);
-        vc.paidLabel.text = [[NSUserDefaults standardUserDefaults]
-                             stringForKey:billDate];
-        vc.totalLabel.text = [[NSUserDefaults standardUserDefaults]
-                              stringForKey:billAmount];
+        NSString *billName = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billName"];
+       // NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDate"];
+        NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billAmount"];
+        NSString *billNameVal = [[NSUserDefaults standardUserDefaults] objectForKey: billName];
+       // NSString *billDateVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDate];
+        NSString *billAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billAmount];
+        
+        vc.billName = billNameVal;
+        vc.paidAmount = @"$0";
+        vc.totalAmount = billAmountVal;
         
         
     }
@@ -99,7 +96,6 @@
 {
     list->billList.erase(list->billList.begin() +  indexPath.row);
     for(int i = (int)indexPath.row+1; i <= list->returnBillListSize(); i++){
-        printf("%d", i);
         NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billName"]];
         NSString *date = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billDate"]];
         NSString *amount = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billAmount"]];
@@ -129,24 +125,17 @@
     
     static NSString *CellIdentifier = @"BillViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell==nil) {
+    Bill bill = list->billList[indexPath.row];
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    
-    
-    // Configure the cell...
-    
-        Bill bill = list->billList[indexPath.row];
-        cell.textLabel.text = [NSString stringWithCString:bill.getBillName().c_str() encoding:[NSString defaultCStringEncoding]];
-        cell.detailTextLabel.text = [NSString stringWithCString:bill.getBillDate().c_str() encoding:[NSString defaultCStringEncoding]];
-    
         UILabel *dollarlabel = [[UILabel alloc] init];
         dollarlabel.text =[[NSString stringWithFormat:@"$"] stringByAppendingString:[NSString stringWithCString:bill.getBillCost().c_str()      encoding:[NSString defaultCStringEncoding]]];
         dollarlabel.textColor = [UIColor redColor];
         [dollarlabel setFrame:cell.frame];
         dollarlabel.textAlignment = NSTextAlignmentRight;
         [cell.contentView addSubview:dollarlabel];
-    }
+    
+    cell.textLabel.text = [NSString stringWithCString:bill.getBillName().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.detailTextLabel.text = [NSString stringWithCString:bill.getBillDate().c_str() encoding:[NSString defaultCStringEncoding]];
     return cell;
 }
 

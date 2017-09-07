@@ -56,7 +56,6 @@
     
     list->choreList.erase(list->choreList.begin() +  indexPath.row);
     for(int i = (int)indexPath.row+1; i <= list->returnChoreListSize(); i++){
-        printf("%d", i);
         NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"choreName"]];
         NSString *time = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"choreTime"]];
         NSString *notif = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"choreNotif"]];

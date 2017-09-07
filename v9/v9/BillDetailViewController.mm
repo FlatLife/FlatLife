@@ -15,13 +15,19 @@
 @implementation BillDetailViewController
 
 @synthesize nameLabel;
+@synthesize billName;
 @synthesize paidLabel;
+@synthesize paidAmount;
 @synthesize totalLabel;
+@synthesize totalAmount;
 @synthesize paymentField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    nameLabel.text = billName;
+    paidLabel.text = paidAmount;
+    totalLabel.text = [@"$" stringByAppendingString:totalAmount];
 }
 
 - (void)didReceiveMemoryWarning {
