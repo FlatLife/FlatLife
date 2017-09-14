@@ -29,6 +29,7 @@
                 NSString *keyName = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billName"];
                 NSString *keyDate = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDate"];
                 NSString *keyAmount = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billAmount"];
+                NSString *keyPaidAmount = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billPaidAmount"];
                 
                 
                 const char *_keyName = [[[NSUserDefaults standardUserDefaults]
@@ -37,7 +38,9 @@
                                          stringForKey:keyDate] cStringUsingEncoding:NSUTF8StringEncoding];
                 const char *_keyAmount = [[[NSUserDefaults standardUserDefaults]
                                          stringForKey:keyAmount] cStringUsingEncoding:NSUTF8StringEncoding];
-                list->setBillObjectValues(_keyName, _keyDate, _keyAmount);
+                const char *_keyPaidAmount = [[[NSUserDefaults standardUserDefaults]
+                                          stringForKey:keyPaidAmount] cStringUsingEncoding:NSUTF8StringEncoding];
+                list->setBillObjectValues(_keyName, _keyDate, _keyAmount, _keyPaidAmount);
                 
             }
         }
@@ -76,16 +79,23 @@
         //Pass the variables to the new controller.
         BillDetailViewController *vc = [segue destinationViewController];
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
         NSString *billName = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billName"];
        // NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDate"];
         NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billAmount"];
+        NSString *billPaidAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billPaidAmount"];
+        
         NSString *billNameVal = [[NSUserDefaults standardUserDefaults] objectForKey: billName];
        // NSString *billDateVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDate];
         NSString *billAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billAmount];
+        NSString *billPaidAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billPaidAmount];
+        NSInteger billNum = path.row+1;
+
         
         vc.billName = billNameVal;
-        vc.paidAmount = @"$0";
+        vc.paidAmount = billPaidAmountVal;
         vc.totalAmount = billAmountVal;
+        vc.billNumber = billNum;
         
         
     }
@@ -99,10 +109,12 @@
         NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billName"]];
         NSString *date = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billDate"]];
         NSString *amount = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billAmount"]];
+        NSString *paidAmount = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billPaidAmount"]];
         
         [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billName"]];
         [[NSUserDefaults standardUserDefaults] setObject:date forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDate"]];
         [[NSUserDefaults standardUserDefaults] setObject:amount forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billAmount"]];
+        [[NSUserDefaults standardUserDefaults] setObject:paidAmount forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billPaidAmount"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnBillListSize()] forKey:@"billSize"];
     
@@ -126,13 +138,21 @@
     static NSString *CellIdentifier = @"BillViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     Bill bill = list->billList[indexPath.row];
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        UILabel *dollarlabel = [[UILabel alloc] init];
-        dollarlabel.text =[[NSString stringWithFormat:@"$"] stringByAppendingString:[NSString stringWithCString:bill.getBillCost().c_str()      encoding:[NSString defaultCStringEncoding]]];
-        dollarlabel.textColor = [UIColor redColor];
-        [dollarlabel setFrame:cell.frame];
-        dollarlabel.textAlignment = NSTextAlignmentRight;
-        [cell.contentView addSubview:dollarlabel];
+    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    UILabel *amountlabel = [[UILabel alloc] init];
+    UILabel *paidlabel = [[UILabel alloc] init];
+
+    amountlabel.text =[[NSString stringWithFormat:@"$"] stringByAppendingString:[NSString stringWithCString:bill.getBillCost().c_str()      encoding:[NSString defaultCStringEncoding]]];
+    amountlabel.textColor = [UIColor redColor];
+    [amountlabel setFrame:cell.frame];
+    amountlabel.textAlignment = NSTextAlignmentRight;
+    [cell.contentView addSubview:amountlabel];
+    
+    paidlabel.text =[[NSString stringWithFormat:@"$"] stringByAppendingString:[NSString stringWithCString:bill.getAmountPaid().c_str()      encoding:[NSString defaultCStringEncoding]]];
+    paidlabel.textColor = [UIColor greenColor];
+    [paidlabel setFrame:cell.frame];
+    paidlabel.textAlignment = NSTextAlignmentCenter;
+    [cell.contentView addSubview:paidlabel];
     
     cell.textLabel.text = [NSString stringWithCString:bill.getBillName().c_str() encoding:[NSString defaultCStringEncoding]];
     cell.detailTextLabel.text = [NSString stringWithCString:bill.getBillDate().c_str() encoding:[NSString defaultCStringEncoding]];

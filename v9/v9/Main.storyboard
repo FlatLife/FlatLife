@@ -413,8 +413,7 @@
                                     <color key="titleShadowColor" white="0.019280133928571429" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="updateBill" destination="crl-Rt-zYw" eventType="touchUpInside" id="AEQ-yz-reX"/>
-                                    <action selector="updatePayment" destination="crl-Rt-zYw" eventType="touchUpInside" id="TgG-MN-ri5"/>
+                                    <action selector="updateBill" destination="crl-Rt-zYw" eventType="touchUpInside" id="6K8-zB-d2A"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add the amount you would like to pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLH-to-pdm">
@@ -438,6 +437,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="R7e-7Y-dsh" id="e6x-Cq-MTj"/>
                         <outlet property="paidLabel" destination="5l1-i1-kbr" id="hXV-hh-nsh"/>
+                        <outlet property="paymentField" destination="C1M-W7-Cxx" id="Wnf-bg-91A"/>
                         <outlet property="totalLabel" destination="9pu-CY-VUg" id="Ixi-0D-8TU"/>
                     </connections>
                 </viewController>

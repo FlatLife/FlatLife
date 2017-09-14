@@ -32,7 +32,7 @@ public:
     string returnStringChoreListSize();
 
     static vector<Bill> billList;
-    void setBillObjectValues(string billName, string billDate, string cost);
+    void setBillObjectValues(string billName, string billDate, string cost, string paid);
     long returnBillListSize();
     string returnStringBillListSize();
 };

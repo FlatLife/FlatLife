@@ -12,14 +12,14 @@ Bill::Bill() {
     name = "";
     date = "";
     cost = "";
-    paid ="";
+    paid = "";
 }
 
-Bill::Bill(string name, string date, string cost) {
+Bill::Bill(string name, string date, string cost, string paid) {
     this->name = name;
     this->date = date;
     this->cost = cost;
-    paid = "0";
+    this->paid = paid;
 }
 
 string Bill::getBillName() {
@@ -39,11 +39,6 @@ string Bill::getAmountPaid() {
 }
 
 void Bill::addPayment(string amount) {
-//    if(paid >= cost){
-//        if((paid + amount) >= cost){
-//            paid = cost;
-//        } else {
-//            paid += amount;
-//        }
-//    }
+    paid = amount;
+    
 }

@@ -7,8 +7,13 @@
 //
 
 #import "BillDetailViewController.h"
+#import "ListWrapper.hpp"
+#import "Bill.hpp"
 
-@interface BillDetailViewController ()
+@interface BillDetailViewController () {
+    ListWrapper *list;
+}
+
 
 @end
 
@@ -21,12 +26,13 @@
 @synthesize totalLabel;
 @synthesize totalAmount;
 @synthesize paymentField;
+@synthesize billNumber;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     nameLabel.text = billName;
-    paidLabel.text = paidAmount;
+    paidLabel.text = [@"$" stringByAppendingString:paidAmount];
     totalLabel.text = [@"$" stringByAppendingString:totalAmount];
 }
 
@@ -36,8 +42,26 @@
 }
 
 - (IBAction)updateBill {
-    //implement
-    //add paid amount to the current bill object
+    NSInteger paymentNum = [self.paymentField.text intValue];
+    NSInteger paidAmountNum = [paidAmount intValue];
+    NSInteger totalAmountNum = [totalAmount intValue];
+    if((paidAmountNum + paymentNum) >= totalAmountNum){
+        NSLog(@"%@", [NSString stringWithFormat:@"%i", (int)totalAmountNum]);
+        paidAmount = [NSString stringWithFormat:@"%i", (int)totalAmountNum];
+        paidLabel.text = [@"$" stringByAppendingString:paidAmount];
+    } else {
+        NSLog(@"%@", [NSString stringWithFormat:@"%i", (int)(paidAmountNum + paymentNum)]);
+        paidAmount = [NSString stringWithFormat:@"%i", (int)(paidAmountNum + paymentNum)];
+        paidLabel.text = [@"$" stringByAppendingString:paidAmount];
+    }
+    
+    Bill bill = list->billList[billNumber-1];
+    bill.addPayment([paidAmount cStringUsingEncoding:NSUTF8StringEncoding]);
+    [[NSUserDefaults standardUserDefaults] setObject:paidAmount forKey:[[NSString stringWithFormat:@"%i", (int)billNumber] stringByAppendingString:@"billPaidAmount"]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self viewDidLoad];
+    [self viewWillAppear:YES];
+    
 }
 
 - (IBAction)saveBill {

@@ -22,7 +22,7 @@ public:
     string cost;
     string paid;
     Bill();
-    Bill(string name, string date, string cost);
+    Bill(string name, string date, string cost, string paid);
     string getBillName();
     string getBillDate();
     string getBillCost();

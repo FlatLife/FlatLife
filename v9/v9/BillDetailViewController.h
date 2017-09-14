@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *totalLabel;
 @property (nonatomic, strong) NSString *totalAmount;
 @property (strong, nonatomic) IBOutlet UITextField *paymentField;
+@property (nonatomic) NSInteger billNumber;
 
 - (IBAction)saveBill;
 - (IBAction)updateBill;
