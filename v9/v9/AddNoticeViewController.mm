@@ -67,7 +67,7 @@
         
         //stores the strings with the correct key.
         [[NSUserDefaults standardUserDefaults] setObject:noticeFieldText forKey:keyName];
-        [[NSUserDefaults standardUserDefaults] setObject:noticeFieldText forKey:keySubject];
+        [[NSUserDefaults standardUserDefaults] setObject:subjectFieldText forKey:keySubject];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
         
         //saves the data.

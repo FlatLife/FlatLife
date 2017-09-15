@@ -80,7 +80,7 @@
         NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"NoticeName"]];
         NSString *subject = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"NoticeSubject"]];
         [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"]];
-        [[NSUserDefaults standardUserDefaults] setObject:subject forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"]];
+        [[NSUserDefaults standardUserDefaults] setObject:subject forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeSubject"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
     
