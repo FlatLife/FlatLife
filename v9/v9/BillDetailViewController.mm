@@ -26,6 +26,8 @@
 @synthesize totalLabel;
 @synthesize totalAmount;
 @synthesize paymentField;
+@synthesize billDesciptView;
+@synthesize billDescipt;
 @synthesize billNumber;
 
 - (void)viewDidLoad {
@@ -40,6 +42,10 @@
     
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];
+    billDesciptView.text = billDescipt;
+    
+    self.billDesciptView.layer.borderWidth = 1.0f;
+    self.billDesciptView.layer.borderColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1] CGColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,9 +84,13 @@
 }
 
 - (IBAction)saveBill {
-    //implement
-    //check if any payments have been made
-    //overwrite the bill object with the new values
+    billDescipt = billDesciptView.text;
+    list->billList[billNumber-1].setDescript([billDescipt cStringUsingEncoding:NSUTF8StringEncoding]);
+    [[NSUserDefaults standardUserDefaults] setObject:billDescipt forKey:[[NSString stringWithFormat:@"%i", (int)billNumber] stringByAppendingString:@"billDescript"]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+    
 }
 
 - (IBAction)dimissBill {

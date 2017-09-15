@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSString *paidAmount;
 @property (strong, nonatomic) IBOutlet UILabel *totalLabel;
 @property (nonatomic, strong) NSString *totalAmount;
+@property (strong, nonatomic) IBOutlet UITextView *billDesciptView;
+@property (nonatomic, strong) NSString *billDescipt;
 @property (strong, nonatomic) IBOutlet UITextField *paymentField;
 @property (nonatomic) NSInteger billNumber;
 

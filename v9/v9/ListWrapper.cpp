@@ -60,9 +60,9 @@ string ListWrapper::returnStringChoreListSize() {
 
 
 //BILLS
-void ListWrapper::setBillObjectValues(string billName, string billDate, string cost, string paid) {
+void ListWrapper::setBillObjectValues(string billName, string billDate, string cost, string paid, string descript) {
     billList.resize(returnBillListSize());
-    billList.push_back(*new Bill(billName, billDate, cost, paid));
+    billList.push_back(*new Bill(billName, billDate, cost, paid, descript));
 }
 
 long ListWrapper::returnBillListSize() {

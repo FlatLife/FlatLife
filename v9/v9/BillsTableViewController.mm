@@ -30,6 +30,7 @@
                 NSString *keyDate = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDate"];
                 NSString *keyAmount = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billAmount"];
                 NSString *keyPaidAmount = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billPaidAmount"];
+                NSString *keyDescript = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDescript"];
                 
                 
                 const char *_keyName = [[[NSUserDefaults standardUserDefaults]
@@ -40,7 +41,9 @@
                                          stringForKey:keyAmount] cStringUsingEncoding:NSUTF8StringEncoding];
                 const char *_keyPaidAmount = [[[NSUserDefaults standardUserDefaults]
                                           stringForKey:keyPaidAmount] cStringUsingEncoding:NSUTF8StringEncoding];
-                list->setBillObjectValues(_keyName, _keyDate, _keyAmount, _keyPaidAmount);
+                const char *_keyDescript = [[[NSUserDefaults standardUserDefaults]
+                                               stringForKey:keyDescript] cStringUsingEncoding:NSUTF8StringEncoding];
+                list->setBillObjectValues(_keyName, _keyDate, _keyAmount, _keyPaidAmount, _keyDescript);
                 
             }
         }
@@ -84,20 +87,22 @@
        // NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDate"];
         NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billAmount"];
         NSString *billPaidAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billPaidAmount"];
+        NSString *billDescript = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDescipt"];
         
         NSString *billNameVal = [[NSUserDefaults standardUserDefaults] objectForKey: billName];
        // NSString *billDateVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDate];
         NSString *billAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billAmount];
         NSString *billPaidAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billPaidAmount];
+        NSString *billDescriptVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDescript];
         NSInteger billNum = path.row+1;
 
         
         vc.billName = billNameVal;
         vc.paidAmount = billPaidAmountVal;
         vc.totalAmount = billAmountVal;
+        vc.billDescipt = billDescriptVal;
         vc.billNumber = billNum;
-        
-        
+     
     }
 }
 
@@ -110,11 +115,13 @@
         NSString *date = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billDate"]];
         NSString *amount = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billAmount"]];
         NSString *paidAmount = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billPaidAmount"]];
+        NSString *descript = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"billDescript"]];
         
         [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billName"]];
         [[NSUserDefaults standardUserDefaults] setObject:date forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDate"]];
         [[NSUserDefaults standardUserDefaults] setObject:amount forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billAmount"]];
         [[NSUserDefaults standardUserDefaults] setObject:paidAmount forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billPaidAmount"]];
+        [[NSUserDefaults standardUserDefaults] setObject:descript forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"billDescript"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnBillListSize()] forKey:@"billSize"];
     
