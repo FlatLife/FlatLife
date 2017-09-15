@@ -107,7 +107,7 @@ ListWrapper listObj = *new ListWrapper();
             }
         }];
         
-        listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding], [@"0" cStringUsingEncoding:NSUTF8StringEncoding], [nameText cStringUsingEncoding:NSUTF8StringEncoding]);
+        listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding], [@"0" cStringUsingEncoding:NSUTF8StringEncoding], [descriptText cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.
         NSString *keyName = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billName"];

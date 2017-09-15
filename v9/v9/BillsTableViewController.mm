@@ -95,6 +95,8 @@
         NSString *billPaidAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billPaidAmount];
         NSString *billDescriptVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDescript];
         NSInteger billNum = path.row+1;
+        
+        NSLog(@"%@", billDescriptVal);
 
         
         vc.billName = billNameVal;
