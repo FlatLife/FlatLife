@@ -10,14 +10,20 @@
 
 Notice::Notice() {
     noticeMessage = "";
+    noticeSubject = "";
 }
 
-Notice::Notice(string noticeMessage) {
+Notice::Notice(string noticeMessage, string noticeSubject) {
     this->noticeMessage = noticeMessage;
+    this->noticeSubject = noticeSubject;
 }
     
 string Notice::getNoticeMessage() {
     return noticeMessage;
+}
+
+string Notice::getNoticeSubject() {
+    return noticeSubject;
 }
 
 

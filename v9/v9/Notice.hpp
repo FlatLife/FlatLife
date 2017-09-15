@@ -19,9 +19,11 @@ class Notice {
     
 public:
     string noticeMessage;
+    string noticeSubject;
     Notice();
-    Notice(string noticeMessage);
+    Notice(string noticeMessage, string noticeSubject);
     string getNoticeMessage();
+    string getNoticeSubject();
 };
 
 #endif /* Notice_hpp */

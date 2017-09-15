@@ -22,7 +22,7 @@ class ListWrapper {
 
 public:
     static vector<Notice> noticeList;
-    void setNoticeObjectValues(string noticeString);
+    void setNoticeObjectValues(string noticeString, string noticeSubject);
     long returnNoticeListSize();
     string returnStringNoticeListSize();
     

@@ -22,6 +22,7 @@
 @implementation AddNoticeViewController
 
 @synthesize noticeText;
+@synthesize subjectText;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,17 +53,23 @@
 }
 
 - (IBAction)saveButton {
-    NSString *fieldText = noticeText.text;
-    if ([fieldText length] > 0) {
-        string objectString = [fieldText cStringUsingEncoding:NSUTF8StringEncoding];
-        list->setNoticeObjectValues(objectString);
+    NSString *subjectFieldText = subjectText.text;
+    NSString *noticeFieldText = noticeText.text;
+    
+    if ([noticeFieldText length] > 0) {
+        string objectString = [noticeFieldText cStringUsingEncoding:NSUTF8StringEncoding];
+        string objectSubject = [subjectFieldText cStringUsingEncoding:NSUTF8StringEncoding];
+        list->setNoticeObjectValues(objectString, objectSubject);
         
         //sets up the strings to be stored locally.
         NSString *keyName = [[NSString stringWithCString:list->returnStringNoticeListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"NoticeName"];
+        NSString *keySubject = [[NSString stringWithCString:list->returnStringNoticeListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"NoticeSubject"];
         
         //stores the strings with the correct key.
-        [[NSUserDefaults standardUserDefaults] setObject:fieldText forKey:keyName];
+        [[NSUserDefaults standardUserDefaults] setObject:noticeFieldText forKey:keyName];
+        [[NSUserDefaults standardUserDefaults] setObject:noticeFieldText forKey:keySubject];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
+        
         //saves the data.
         [[NSUserDefaults standardUserDefaults] synchronize];
         

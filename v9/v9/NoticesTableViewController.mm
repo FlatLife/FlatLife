@@ -60,7 +60,8 @@
     // Configure the cell...
     
     Notice notice = list->noticeList[indexPath.row];
-    cell.textLabel.text = [NSString stringWithCString:notice.getNoticeMessage().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.textLabel.text = [NSString stringWithCString:notice.getNoticeSubject().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.detailTextLabel.text = [NSString stringWithCString:notice.getNoticeMessage().c_str() encoding:[NSString defaultCStringEncoding]];
     //[self.tableView reloadData];
     return cell;
 }
@@ -77,7 +78,9 @@
     for(int i = (int)indexPath.row+1; i <= list->returnNoticeListSize(); i++){
         printf("%d", i);
         NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"NoticeName"]];
+        NSString *subject = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%i", i+1] stringByAppendingString:@"NoticeSubject"]];
         [[NSUserDefaults standardUserDefaults] setObject:name forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"]];
+        [[NSUserDefaults standardUserDefaults] setObject:subject forKey:[[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"]];
     }
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:list->returnNoticeListSize()] forKey:@"NoticeSize"];
     
