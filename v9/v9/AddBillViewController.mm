@@ -46,10 +46,6 @@ ListWrapper listObj = *new ListWrapper();
     // Dispose of any resources that can be recreated.
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
-}
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if(range.length + range.location > textField.text.length)
@@ -65,6 +61,10 @@ ListWrapper listObj = *new ListWrapper();
     [self.view endEditing:true];
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (IBAction)createBill {
     if(self.nameField.text.length > 0){

@@ -34,11 +34,27 @@
     nameLabel.text = billName;
     paidLabel.text = [@"$" stringByAppendingString:paidAmount];
     totalLabel.text = [@"$" stringByAppendingString:totalAmount];
+    paymentField.delegate = self;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void)dismissKeyboard {
+    [self.view endEditing:true];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)updateBill {

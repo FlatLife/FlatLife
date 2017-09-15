@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     noticeText.delegate=self;
+    subjectText.delegate = self;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissKeyboard)];
     

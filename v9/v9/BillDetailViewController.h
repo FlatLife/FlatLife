@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BillDetailViewController : UIViewController
+@interface BillDetailViewController : UIViewController<UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (nonatomic, strong) NSString *billName;
