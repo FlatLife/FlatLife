@@ -1,4 +1,3 @@
-//
 //  Bill.cpp
 //  v9
 //
@@ -39,6 +38,5 @@ string Bill::getAmountPaid() {
 }
 
 void Bill::addPayment(string amount) {
-    paid = amount;
-    
+    this->paid = amount;
 }

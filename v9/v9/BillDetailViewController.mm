@@ -46,17 +46,14 @@
     NSInteger paidAmountNum = [paidAmount intValue];
     NSInteger totalAmountNum = [totalAmount intValue];
     if((paidAmountNum + paymentNum) >= totalAmountNum){
-        NSLog(@"%@", [NSString stringWithFormat:@"%i", (int)totalAmountNum]);
         paidAmount = [NSString stringWithFormat:@"%i", (int)totalAmountNum];
         paidLabel.text = [@"$" stringByAppendingString:paidAmount];
     } else {
-        NSLog(@"%@", [NSString stringWithFormat:@"%i", (int)(paidAmountNum + paymentNum)]);
         paidAmount = [NSString stringWithFormat:@"%i", (int)(paidAmountNum + paymentNum)];
         paidLabel.text = [@"$" stringByAppendingString:paidAmount];
     }
     
-    Bill bill = list->billList[billNumber-1];
-    bill.addPayment([paidAmount cStringUsingEncoding:NSUTF8StringEncoding]);
+    list->billList[billNumber-1].addPayment([paidAmount cStringUsingEncoding:NSUTF8StringEncoding]);
     [[NSUserDefaults standardUserDefaults] setObject:paidAmount forKey:[[NSString stringWithFormat:@"%i", (int)billNumber] stringByAppendingString:@"billPaidAmount"]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self viewDidLoad];
