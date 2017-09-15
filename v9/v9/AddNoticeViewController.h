@@ -10,6 +10,8 @@
 
 @interface AddNoticeViewController : UIViewController<UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *subjectText;
 @property (strong, nonatomic) IBOutlet UITextField *noticeText;
+
 
 @end

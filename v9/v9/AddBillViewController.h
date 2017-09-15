@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (strong, nonatomic) IBOutlet UITextField *nameField;
+@property (strong, nonatomic) IBOutlet UITextView *descriptField;
 @property (strong, nonatomic) IBOutlet UITextField *amountField;
 @property (strong, nonatomic) UNMutableNotificationContent *localNotification;
 

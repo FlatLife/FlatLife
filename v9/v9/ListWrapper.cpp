@@ -21,9 +21,9 @@ vector<Bill> ListWrapper::billList;
 
 
 //NOTICES
-void ListWrapper::setNoticeObjectValues(string objectString) {
+void ListWrapper::setNoticeObjectValues(string objectString, string objectSubject) {
     noticeList.resize(returnNoticeListSize());
-    noticeList.push_back(*new Notice(objectString));
+    noticeList.push_back(*new Notice(objectString, objectSubject));
 }
 
 long ListWrapper::returnNoticeListSize() {

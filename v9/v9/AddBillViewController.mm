@@ -24,11 +24,14 @@ ListWrapper listObj = *new ListWrapper();
 
 @synthesize datePicker;
 @synthesize nameField;
+@synthesize descriptField;
 @synthesize amountField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.descriptField.layer.borderWidth = 1.0f;
+    self.descriptField.layer.borderColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1] CGColor];
     nameField.delegate = self;
     amountField.delegate = self;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self

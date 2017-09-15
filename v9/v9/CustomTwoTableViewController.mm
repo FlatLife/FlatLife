@@ -56,11 +56,14 @@
             NSInteger savedSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"NoticeSize"] longLongValue];
             for(int i = 1; i <= savedSize; i++){
                 NSString *keyName = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeName"];
+                NSString *keySubject = [[NSString stringWithFormat:@"%i", i] stringByAppendingString:@"NoticeSubject"];
                 
                 
                 const char *_keyName = [[[NSUserDefaults standardUserDefaults]
                                          stringForKey:keyName] cStringUsingEncoding:NSUTF8StringEncoding];
-                list->setNoticeObjectValues(_keyName);
+                const char *_keySubject = [[[NSUserDefaults standardUserDefaults]
+                                         stringForKey:keySubject] cStringUsingEncoding:NSUTF8StringEncoding];
+                list->setNoticeObjectValues(_keyName, _keySubject);
                 
             }
         }
@@ -134,7 +137,7 @@
         [UIColor colorWithRed:75.0/255.0 green:75.0/255.0 blue:75.0/255.0 alpha:1];
         // E R R O R V VV V V
         Notice notice = list->noticeList[indexPath.row];
-        cell2.textLabel.text = [NSString stringWithCString:notice.getNoticeMessage().c_str() encoding:[NSString defaultCStringEncoding]];
+        cell2.textLabel.text = [NSString stringWithCString:notice.getNoticeSubject().c_str() encoding:[NSString defaultCStringEncoding]];
         return cell2;
     }
    
