@@ -155,10 +155,10 @@
     amountlabel.textAlignment = NSTextAlignmentRight;
     [cell.contentView addSubview:amountlabel];
     
-    paidlabel.text = [[NSString stringWithFormat:@"$"] stringByAppendingString:[NSString stringWithCString:bill.getAmountPaid().c_str()      encoding:[NSString defaultCStringEncoding]]];
+    paidlabel.text = [[NSString stringWithFormat:@"\t\t\t\t\t\t\t$"] stringByAppendingString:[NSString stringWithCString:bill.getAmountPaid().c_str()      encoding:[NSString defaultCStringEncoding]]];
     paidlabel.textColor = [UIColor greenColor];
     [paidlabel setFrame:cell.frame];
-    paidlabel.textAlignment = NSTextAlignmentCenter;
+    paidlabel.textAlignment = NSTextAlignmentLeft;
     [cell.contentView addSubview:paidlabel];
     
     cell.textLabel.text = [NSString stringWithCString:bill.getBillName().c_str() encoding:[NSString defaultCStringEncoding]];
