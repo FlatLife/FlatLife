@@ -21,13 +21,16 @@ public:
     string date;
     string cost;
     string paid;
+    string descript;
     Bill();
-    Bill(string name, string date, string cost, string paid);
+    Bill(string name, string date, string cost, string paid, string descript);
     string getBillName();
     string getBillDate();
     string getBillCost();
     string getAmountPaid();
+    string getDescript();
     void addPayment(string amount);
+    void setDescript(string descript);
 };
 
 #endif /* Bill_hpp */

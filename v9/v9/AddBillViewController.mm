@@ -60,6 +60,7 @@ ListWrapper listObj = *new ListWrapper();
     if(self.nameField.text.length > 0){
         NSString *nameText = self.nameField.text;
         NSString *amountText = self.amountField.text;
+        NSString *descriptText = self.descriptField.text;
         
         NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
         [outputFormatter setDateFormat:@"EEE, d MMM yyyy"];
@@ -96,19 +97,21 @@ ListWrapper listObj = *new ListWrapper();
             }
         }];
         
-        listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding], [@"0" cStringUsingEncoding:NSUTF8StringEncoding]);
+        listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding], [@"0" cStringUsingEncoding:NSUTF8StringEncoding], [nameText cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.
         NSString *keyName = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billName"];
         NSString *keyDate = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billDate"];
         NSString *keyAmount = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billAmount"];
         NSString *keyPaidAmount = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billPaidAmount"];
+        NSString *keyDescript = [[NSString stringWithCString:listObj.returnStringBillListSize().c_str() encoding:[NSString defaultCStringEncoding]] stringByAppendingString:@"billDescript"];
         
         //stores the strings with the correct key.
         [[NSUserDefaults standardUserDefaults] setObject:nameText forKey:keyName];
         [[NSUserDefaults standardUserDefaults] setObject:[outputFormatter stringFromDate:self.datePicker.date] forKey:keyDate];
         [[NSUserDefaults standardUserDefaults] setObject:amountText forKey:keyAmount];
         [[NSUserDefaults standardUserDefaults] setObject:@"0" forKey:keyPaidAmount];
+        [[NSUserDefaults standardUserDefaults] setObject:descriptText forKey:keyDescript];
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:listObj.returnBillListSize()] forKey:@"billSize"];
         
         //saves the data.

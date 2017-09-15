@@ -12,13 +12,15 @@ Bill::Bill() {
     date = "";
     cost = "";
     paid = "";
+    descript = "";
 }
 
-Bill::Bill(string name, string date, string cost, string paid) {
+Bill::Bill(string name, string date, string cost, string paid, string descript) {
     this->name = name;
     this->date = date;
     this->cost = cost;
     this->paid = paid;
+    this->descript = descript;
 }
 
 string Bill::getBillName() {
@@ -37,6 +39,14 @@ string Bill::getAmountPaid() {
     return paid;
 }
 
+string Bill::getDescript() {
+    return descript;
+}
+
 void Bill::addPayment(string amount) {
     this->paid = amount;
+}
+
+void Bill::setDescript(string descript){
+    this->descript = descript;
 }
