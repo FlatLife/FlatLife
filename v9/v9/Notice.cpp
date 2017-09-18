@@ -26,6 +26,10 @@ string Notice::getNoticeSubject() {
     return noticeSubject;
 }
 
+void Notice::setMessage(string text){
+    noticeMessage = text;
+}
+
 
 
 

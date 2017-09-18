@@ -7,6 +7,7 @@
 //
 
 #import "NoticesTableViewController.h"
+#import "NoticeDetailViewController.h"
 #import "Notice.hpp"
 #import "ListWrapper.hpp"
 
@@ -70,6 +71,35 @@
 {
     return YES;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ShowNoticeDetail" sender:tableView];
+}
+
+//preparing for the transition to the BillsDetailViewController
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowNoticeDetail"]) {
+        //Pass the variables to the new controller.
+        NoticeDetailViewController *vc = [segue destinationViewController];
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
+        NSString *noticeSubject = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"NoticeSubject"];
+        NSString *noticeText = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"NoticeName"];
+        
+        NSString *noticeSubjectVal = [[NSUserDefaults standardUserDefaults] objectForKey: noticeSubject];
+        NSString *noticeTextVal = [[NSUserDefaults standardUserDefaults] objectForKey: noticeText];
+        NSInteger noticeNum = path.row+1;
+        
+        
+        vc.noticeSubject = noticeSubjectVal;
+        vc.noticeText = noticeTextVal;
+        vc.noticeNumber = noticeNum;
+        
+    }
+}
+
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {

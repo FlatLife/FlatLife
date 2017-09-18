@@ -32,6 +32,7 @@
 		96EDB86D1ED51A72008FA98E /* ChoresTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86C1ED51A72008FA98E /* ChoresTableViewController.mm */; };
 		96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96EDB86E1ED51AFE008FA98E /* Chore.cpp */; };
 		96FBB0281ED6671E00F7E119 /* AddNoticeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */; };
+		BB1B92B91F6FC2DD00407400 /* NoticeDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1B92B81F6FC2DD00407400 /* NoticeDetailViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		96EDB86F1ED51AFE008FA98E /* Chore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chore.hpp; sourceTree = "<group>"; };
 		96FBB0261ED6671E00F7E119 /* AddNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoticeViewController.h; sourceTree = "<group>"; };
 		96FBB0271ED6671E00F7E119 /* AddNoticeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddNoticeViewController.mm; sourceTree = "<group>"; };
+		BB1B92B71F6FC2DD00407400 /* NoticeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeDetailViewController.h; sourceTree = "<group>"; };
+		BB1B92B81F6FC2DD00407400 /* NoticeDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NoticeDetailViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				6205E14D1ED3E13700DD487F /* Notice.hpp */,
 				6205E14E1ED3E13700DD487F /* NoticesTableViewController.h */,
 				6205E14F1ED3E13700DD487F /* NoticesTableViewController.mm */,
+				BB1B92B71F6FC2DD00407400 /* NoticeDetailViewController.h */,
+				BB1B92B81F6FC2DD00407400 /* NoticeDetailViewController.mm */,
 				6205E1501ED3E13700DD487F /* NotificationViewCell.h */,
 				6205E1511ED3E13700DD487F /* NotificationViewCell.mm */,
 				6205E1521ED3E13700DD487F /* TestView.xib */,
@@ -381,6 +386,7 @@
 				6205E15F1ED3E15500DD487F /* main.m in Sources */,
 				96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */,
 				6205E15A1ED3E13700DD487F /* NoticesTableViewController.mm in Sources */,
+				BB1B92B91F6FC2DD00407400 /* NoticeDetailViewController.mm in Sources */,
 				96DA5A371EDBB08B0042FBD6 /* AddBillViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

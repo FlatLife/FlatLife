@@ -72,13 +72,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"ShowDetail" sender:tableView];
+    [self performSegueWithIdentifier:@"ShowBillDetail" sender:tableView];
 }
 
 //preparing for the transition to the BillsDetailViewController
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+    if ([segue.identifier isEqualToString:@"ShowBillDetail"]) {
         //Pass the variables to the new controller.
         BillDetailViewController *vc = [segue destinationViewController];
         NSIndexPath *path = [self.tableView indexPathForSelectedRow];
@@ -155,14 +155,14 @@
     amountlabel.textAlignment = NSTextAlignmentRight;
     [cell.contentView addSubview:amountlabel];
     
-    paidlabel.text = [[NSString stringWithFormat:@"\t\t\t\t\t\t\t$"] stringByAppendingString:[NSString stringWithCString:bill.getAmountPaid().c_str()      encoding:[NSString defaultCStringEncoding]]];
+    paidlabel.text = [[NSString stringWithFormat:@"\t\t\t\t\t\t\t$"] stringByAppendingString:[NSString stringWithCString:bill.getAmountPaid().c_str() encoding:[NSString defaultCStringEncoding]]];
     paidlabel.textColor = [UIColor greenColor];
     [paidlabel setFrame:cell.frame];
     paidlabel.textAlignment = NSTextAlignmentLeft;
     [cell.contentView addSubview:paidlabel];
     
     cell.textLabel.text = [NSString stringWithCString:bill.getBillName().c_str() encoding:[NSString defaultCStringEncoding]];
-    cell.detailTextLabel.text = [NSString stringWithCString:bill.getBillDate().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.detailTextLabel.text = [[NSString stringWithFormat:@"Due Date - "] stringByAppendingString:[NSString stringWithCString:bill.getBillDate().c_str() encoding:[NSString defaultCStringEncoding]]];
     return cell;
 }
 
