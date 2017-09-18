@@ -87,7 +87,7 @@
        // NSString *billDate = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDate"];
         NSString *billAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billAmount"];
         NSString *billPaidAmount = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billPaidAmount"];
-        NSString *billDescript = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDescipt"];
+        NSString *billDescript = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"billDescript"];
         
         NSString *billNameVal = [[NSUserDefaults standardUserDefaults] objectForKey: billName];
        // NSString *billDateVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDate];
@@ -95,8 +95,6 @@
         NSString *billPaidAmountVal = [[NSUserDefaults standardUserDefaults] objectForKey: billPaidAmount];
         NSString *billDescriptVal = [[NSUserDefaults standardUserDefaults] objectForKey: billDescript];
         NSInteger billNum = path.row+1;
-        
-        NSLog(@"%@", billDescriptVal);
 
         
         vc.billName = billNameVal;
