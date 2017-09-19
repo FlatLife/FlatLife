@@ -75,12 +75,15 @@
         paidLabel.text = [@"$" stringByAppendingString:paidAmount];
     }
     
+    NSString *tempDescript = billDesciptView.text;
+    
     list->billList[billNumber-1].addPayment([paidAmount cStringUsingEncoding:NSUTF8StringEncoding]);
     [[NSUserDefaults standardUserDefaults] setObject:paidAmount forKey:[[NSString stringWithFormat:@"%i", (int)billNumber] stringByAppendingString:@"billPaidAmount"]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self viewDidLoad];
     [self viewWillAppear:YES];
     
+    billDesciptView.text = tempDescript;
 }
 
 - (IBAction)saveBill {
