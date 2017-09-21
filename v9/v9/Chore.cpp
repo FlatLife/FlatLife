@@ -10,17 +10,18 @@
 
 Chore::Chore() {
     isComplete = false;
-    name = "";
     time = "";
+    choreMessage = "";
+    choreSubject = "";
 }
 
-Chore::Chore(string name, string time) {
-    this->name = name;
+Chore::Chore(string choreSubject, string time) {
+    this->choreSubject = choreSubject;
     this->time = time;
 }
 
-string Chore::getChoreName() {
-    return name;
+string Chore::getChoreSubject() {
+    return choreSubject;
 }
 
 string Chore::getChoreTime() {
@@ -33,4 +34,8 @@ bool Chore::returnCompleted() {
 
 void Chore::setCompleted() {
     this->isComplete = true;
+}
+
+void Chore::setMessage(string text){
+    choreMessage = text;
 }

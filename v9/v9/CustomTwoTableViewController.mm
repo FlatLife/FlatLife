@@ -125,7 +125,7 @@
         
         // E R R O R V VV V V
         Chore chore = list->choreList[indexPath.row];
-        cell.textLabel.text = [NSString stringWithCString:chore.getChoreName().c_str() encoding:[NSString defaultCStringEncoding]];
+        cell.textLabel.text = [NSString stringWithCString:chore.getChoreSubject().c_str() encoding:[NSString defaultCStringEncoding]];
         cell.detailTextLabel.text = [NSString stringWithCString:chore.getChoreTime().c_str() encoding:[NSString defaultCStringEncoding]];
         return cell;
     }

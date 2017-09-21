@@ -20,6 +20,7 @@
 		6205E15C1ED3E13700DD487F /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6205E1521ED3E13700DD487F /* TestView.xib */; };
 		6205E15D1ED3E13700DD487F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6205E1541ED3E13700DD487F /* ViewController.mm */; };
 		6205E15F1ED3E15500DD487F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205E15E1ED3E15500DD487F /* main.m */; };
+		620EAC041F70A6BD007E1C12 /* ChoreDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 620EAC031F70A6BD007E1C12 /* ChoreDetailViewController.mm */; };
 		625E1B9C1EDAB77A00EEB86D /* CustomTwoTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */; };
 		9600A9DB1F2AC1D6001640CC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */; };
 		96075D191F32DF9800377516 /* BillDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96075D181F32DF9800377516 /* BillDetailViewController.mm */; };
@@ -78,6 +79,8 @@
 		6205E1531ED3E13700DD487F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6205E1541ED3E13700DD487F /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		6205E15E1ED3E15500DD487F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		620EAC021F70A6BD007E1C12 /* ChoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreDetailViewController.h; sourceTree = "<group>"; };
+		620EAC031F70A6BD007E1C12 /* ChoreDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChoreDetailViewController.mm; sourceTree = "<group>"; };
 		625E1B9A1EDAB77A00EEB86D /* CustomTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTwoTableViewController.h; sourceTree = "<group>"; };
 		625E1B9B1EDAB77A00EEB86D /* CustomTwoTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomTwoTableViewController.mm; sourceTree = "<group>"; };
 		9600A9DA1F2AC1D6001640CC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
@@ -169,6 +172,8 @@
 				6205E14F1ED3E13700DD487F /* NoticesTableViewController.mm */,
 				BB1B92B71F6FC2DD00407400 /* NoticeDetailViewController.h */,
 				BB1B92B81F6FC2DD00407400 /* NoticeDetailViewController.mm */,
+				620EAC021F70A6BD007E1C12 /* ChoreDetailViewController.h */,
+				620EAC031F70A6BD007E1C12 /* ChoreDetailViewController.mm */,
 				6205E1501ED3E13700DD487F /* NotificationViewCell.h */,
 				6205E1511ED3E13700DD487F /* NotificationViewCell.mm */,
 				6205E1521ED3E13700DD487F /* TestView.xib */,
@@ -387,6 +392,7 @@
 				96EDB8701ED51AFE008FA98E /* Chore.cpp in Sources */,
 				6205E15A1ED3E13700DD487F /* NoticesTableViewController.mm in Sources */,
 				BB1B92B91F6FC2DD00407400 /* NoticeDetailViewController.mm in Sources */,
+				620EAC041F70A6BD007E1C12 /* ChoreDetailViewController.mm in Sources */,
 				96DA5A371EDBB08B0042FBD6 /* AddBillViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

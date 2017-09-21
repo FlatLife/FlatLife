@@ -18,15 +18,16 @@ class Chore {
 
 public:
     bool isComplete;
-    string name;
     string time;
+    string choreMessage;
+    string choreSubject;
     Chore();
     Chore(string name, string time);
-    string getChoreName();
+    string getChoreSubject();
     string getChoreTime();
     bool returnCompleted();
     void setCompleted();
+    void setMessage(string text);
 };
-
 
 #endif /* Chore_hpp */

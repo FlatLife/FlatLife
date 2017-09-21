@@ -7,6 +7,7 @@
 //
 
 #import "ChoresTableViewController.h"
+#import "ChoreDetailViewController.h"
 #import "Chore.hpp"
 #import "ListWrapper.hpp"
 
@@ -45,6 +46,35 @@
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"ShowChoreDetail" sender:tableView];
+}
+
+//preparing for the transition to the ChoresDetailViewController
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowChoreDetail"]) {
+        //Pass the variables to the new controller.
+        ChoreDetailViewController *vc = [segue destinationViewController];
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
+        NSString *choreSubject = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"choreName"];
+
+        //NSString *noticeText = [[NSString stringWithFormat:@"%i", (int)path.row+1] stringByAppendingString:@"ChoreName"];
+        
+        NSString *choreSubjectVal = [[NSUserDefaults standardUserDefaults] objectForKey: choreSubject];
+        //NSString *choreTextVal = [[NSUserDefaults standardUserDefaults] objectForKey: noticeText];
+        NSInteger choreNum = path.row+1;
+        
+        
+        vc.choreSubject = choreSubjectVal;
+        //vc.choreSubjectText = choreSubjectTextVal;
+        vc.choreNumber = choreNum;
+        
+    }
+}
+
 // method called when user presses the delte button on a specific cell. it then deletes all the data for that cell and then reloads the table data.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -67,7 +97,6 @@
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     [tableView reloadData];
-    
 }
 
 #pragma mark - Table view data source
@@ -94,7 +123,7 @@
     // Configure the cell...
     
     Chore chore = list->choreList[indexPath.row];
-    cell.textLabel.text = [NSString stringWithCString:chore.getChoreName().c_str() encoding:[NSString defaultCStringEncoding]];
+    cell.textLabel.text = [NSString stringWithCString:chore.getChoreSubject().c_str() encoding:[NSString defaultCStringEncoding]];
     cell.detailTextLabel.text = [NSString stringWithCString:chore.getChoreTime().c_str() encoding:[NSString defaultCStringEncoding]];
     
     return cell;
