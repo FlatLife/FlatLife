@@ -30,6 +30,9 @@ void Notice::setMessage(string text){
     noticeMessage = text;
 }
 
+void Notice::setSubject(string text){
+    noticeSubject = text;
+}
 
 
 

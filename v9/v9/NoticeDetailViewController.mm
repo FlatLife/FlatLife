@@ -18,7 +18,7 @@
 
 @implementation NoticeDetailViewController
 
-@synthesize noticeSubjectLabel;
+@synthesize noticeSubjectText;
 @synthesize noticeSubject;
 @synthesize noticeTextView;
 @synthesize noticeText;
@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    noticeSubjectLabel.text = noticeSubject;
+    noticeSubjectText.text = noticeSubject;
     noticeTextView.text = noticeText;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissKeyboard)];    
@@ -46,8 +46,12 @@
 
 - (IBAction)saveNotice {
     noticeText = noticeTextView.text;
+    noticeSubject = noticeSubjectText.text;
+    
     list->noticeList[noticeNumber-1].setMessage([noticeText cStringUsingEncoding:NSUTF8StringEncoding]);
+    list->noticeList[noticeNumber-1].setSubject([noticeSubject cStringUsingEncoding:NSUTF8StringEncoding]);
     [[NSUserDefaults standardUserDefaults] setObject:noticeText forKey:[[NSString stringWithFormat:@"%i", (int)noticeNumber] stringByAppendingString:@"NoticeName"]];
+    [[NSUserDefaults standardUserDefaults] setObject:noticeSubject forKey:[[NSString stringWithFormat:@"%i", (int)noticeNumber] stringByAppendingString:@"NoticeSubject"]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self dismissViewControllerAnimated:YES completion:nil];
     

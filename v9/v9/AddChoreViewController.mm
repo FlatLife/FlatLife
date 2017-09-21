@@ -81,7 +81,6 @@ ListWrapper list = *new ListWrapper();
         //schedule:
         NSNumber *uidNum = [NSNumber numberWithInteger:[NSDate timeIntervalSinceReferenceDate] * 10000];
         NSString *uid = [uidNum stringValue];
-        NSLog(@"%@", uid);
         UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:uid content: _localNotification trigger:trigger];
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {

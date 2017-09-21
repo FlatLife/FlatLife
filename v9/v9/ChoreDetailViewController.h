@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 
 @interface ChoreDetailViewController : UIViewController
 
@@ -15,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIDatePicker *choreDate;
 @property (nonatomic, strong) NSDate *choreTime;
 @property (nonatomic) NSInteger choreNumber;
+@property (strong, nonatomic) UNMutableNotificationContent *localNotification;
 
 - (IBAction)saveChore;
 

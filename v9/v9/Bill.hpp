@@ -31,6 +31,7 @@ public:
     string getDescript();
     void addPayment(string amount);
     void setDescript(string descript);
+    void setName(string name);
 };
 
 #endif /* Bill_hpp */

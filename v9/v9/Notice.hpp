@@ -25,6 +25,7 @@ public:
     string getNoticeMessage();
     string getNoticeSubject();
     void setMessage(string text);
+    void setSubject(string text);
 };
 
 #endif /* Notice_hpp */

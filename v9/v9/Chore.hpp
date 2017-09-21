@@ -27,6 +27,7 @@ public:
     bool returnCompleted();
     void setCompleted();
     void setMessage(string text);
+    void setTime(string time);
 };
 
 #endif /* Chore_hpp */

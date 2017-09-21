@@ -47,8 +47,49 @@
 
 - (IBAction)saveChore {
     choreSubject = choreSubjectText.text;
+    
+    NSString *notif = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%ld", choreNumber] stringByAppendingString:@"choreNotif"]];
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    NSArray *array = [NSArray arrayWithObjects:notif,nil];
+    [center removePendingNotificationRequestsWithIdentifiers:array];
+    
+    
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"h:mm a"];
+    
+    //setting the notification for the chore.
+    _localNotification  = [[UNMutableNotificationContent alloc] init];
+    _localNotification.title = [NSString localizedUserNotificationStringForKey:@"Reminder For Chore!" arguments:nil];
+    _localNotification.body = [NSString localizedUserNotificationStringForKey:choreSubject arguments:nil];
+    _localNotification.sound = [UNNotificationSound defaultSound];
+    
+    //setting the correct time for the notification
+    NSDate *chosen = [choreDate date];
+    NSDateComponents* triggerTime = [[NSDateComponents alloc] init];
+    NSCalendar *calender = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calender components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:chosen];
+    triggerTime.hour = [components hour];
+    triggerTime.minute = [components minute];
+    
+    UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:triggerTime repeats:YES];
+    
+    _localNotification.badge =@([[UIApplication sharedApplication] applicationIconBadgeNumber] +1);
+    //schedule:
+    NSNumber *uidNum = [NSNumber numberWithInteger:[NSDate timeIntervalSinceReferenceDate] * 10000];
+    NSString *uid = [uidNum stringValue];
+    UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:uid content: _localNotification trigger:trigger];
+    [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        if (!error){
+            NSLog(@"Add NotificationRequest succeeded!");
+        }
+    }];
+    
+    
+    list->choreList[choreNumber-1].setTime([[outputFormatter stringFromDate:self.choreDate.date] cStringUsingEncoding:NSUTF8StringEncoding]);
     list->choreList[choreNumber-1].setMessage([choreSubject cStringUsingEncoding:NSUTF8StringEncoding]);
     [[NSUserDefaults standardUserDefaults] setObject:choreSubject forKey:[[NSString stringWithFormat:@"%i", (int)choreNumber] stringByAppendingString:@"choreName"]];
+    [[NSUserDefaults standardUserDefaults] setObject:[outputFormatter stringFromDate:self.choreDate.date] forKey:[[NSString stringWithFormat:@"%i", (int)choreNumber] stringByAppendingString:@"choreTime"]];
+    [[NSUserDefaults standardUserDefaults] setObject:uid forKey:[[NSString stringWithFormat:@"%i", (int)choreNumber] stringByAppendingString:@"choreNotif"]];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self dismissViewControllerAnimated:YES completion:nil];

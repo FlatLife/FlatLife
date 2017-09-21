@@ -10,7 +10,7 @@
 
 @interface BillDetailViewController : UIViewController<UITextFieldDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UITextField *nameLabel;
 @property (nonatomic, strong) NSString *billName;
 @property (strong, nonatomic) IBOutlet UILabel *paidLabel;
 @property (nonatomic, strong) NSString *paidAmount;

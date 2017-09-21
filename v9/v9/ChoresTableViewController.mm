@@ -79,7 +79,6 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *notif = [[NSUserDefaults standardUserDefaults] objectForKey:[[NSString stringWithFormat:@"%ld", indexPath.row+1] stringByAppendingString:@"choreNotif"]];
-    NSLog(@"hello %@", notif);
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     NSArray *array = [NSArray arrayWithObjects:notif,nil];
     [center removePendingNotificationRequestsWithIdentifiers:array];

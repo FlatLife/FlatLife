@@ -38,3 +38,7 @@ void Chore::setCompleted() {
 void Chore::setMessage(string text){
     choreSubject = text;
 }
+
+void Chore::setTime(string time){
+    this->time = time;
+}

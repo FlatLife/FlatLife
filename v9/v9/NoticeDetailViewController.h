@@ -10,7 +10,8 @@
 
 @interface NoticeDetailViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *noticeSubjectLabel;
+
+@property (strong, nonatomic) IBOutlet UITextField *noticeSubjectText;
 @property (nonatomic, strong) NSString *noticeSubject;
 @property (strong, nonatomic) IBOutlet UITextView *noticeTextView;
 @property (nonatomic, strong) NSString *noticeText;

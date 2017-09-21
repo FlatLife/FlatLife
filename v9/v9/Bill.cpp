@@ -50,3 +50,7 @@ void Bill::addPayment(string amount) {
 void Bill::setDescript(string descript){
     this->descript = descript;
 }
+
+void Bill::setName(string name){
+    this->name = name;
+}
