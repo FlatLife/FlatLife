@@ -49,6 +49,7 @@
     choreSubject = choreSubjectText.text;
     list->choreList[choreNumber-1].setMessage([choreSubject cStringUsingEncoding:NSUTF8StringEncoding]);
     [[NSUserDefaults standardUserDefaults] setObject:choreSubject forKey:[[NSString stringWithFormat:@"%i", (int)choreNumber] stringByAppendingString:@"choreName"]];
+    
     [[NSUserDefaults standardUserDefaults] synchronize];
     [self dismissViewControllerAnimated:YES completion:nil];
     

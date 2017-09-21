@@ -11,7 +11,6 @@
 Chore::Chore() {
     isComplete = false;
     time = "";
-    choreMessage = "";
     choreSubject = "";
 }
 
@@ -37,5 +36,5 @@ void Chore::setCompleted() {
 }
 
 void Chore::setMessage(string text){
-    choreMessage = text;
+    choreSubject = text;
 }

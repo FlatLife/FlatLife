@@ -19,7 +19,6 @@ class Chore {
 public:
     bool isComplete;
     string time;
-    string choreMessage;
     string choreSubject;
     Chore();
     Chore(string name, string time);
