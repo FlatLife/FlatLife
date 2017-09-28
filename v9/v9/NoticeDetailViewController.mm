@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     noticeSubjectText.text = noticeSubject;
     noticeTextView.text = noticeText;
+    noticeSubjectText.delegate = self;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissKeyboard)];    
     tap.cancelsTouchesInView = NO;

@@ -38,6 +38,17 @@ ListWrapper list = *new ListWrapper();
     [self.view addGestureRecognizer:tap];
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if(range.length + range.location > textField.text.length)
+    {
+        return NO;
+    }
+    
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return newLength <= 20;
+}
+
+
 -(void)dismissKeyboard {
     [self.view endEditing:true];
 }

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NoticeDetailViewController : UIViewController
+@interface NoticeDetailViewController : UIViewController<UITextFieldDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UITextField *noticeSubjectText;

@@ -30,6 +30,7 @@
     // Do any additional setup after loading the view.
     //NSLog(@"%@", choreSubject);
     choreSubjectText.text = choreSubject;
+    choreSubjectText.delegate = self;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissKeyboard)];
     tap.cancelsTouchesInView = NO;
@@ -107,6 +108,16 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if(range.length + range.location > textField.text.length)
+    {
+        return NO;
+    }
+    
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return newLength <= 20;
 }
 
 /*

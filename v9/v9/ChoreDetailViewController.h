@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
-@interface ChoreDetailViewController : UIViewController
+@interface ChoreDetailViewController : UIViewController<UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField* choreSubjectText;
 @property (nonatomic, strong) NSString *choreSubject;
