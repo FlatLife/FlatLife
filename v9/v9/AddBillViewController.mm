@@ -101,11 +101,7 @@ ListWrapper listObj = *new ListWrapper();
         //schedule:
         UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:@"Time Down" content: _localNotification trigger:trigger];
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
-            if (!error){
-                NSLog(@"Add NotificationRequest succeeded!");
-            }
-        }];
+        [center addNotificationRequest:request withCompletionHandler:nil];
         
         listObj.setBillObjectValues([nameText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.datePicker.date] cStringUsingEncoding:NSUTF8StringEncoding], [amountText cStringUsingEncoding:NSUTF8StringEncoding], [@"0" cStringUsingEncoding:NSUTF8StringEncoding], [descriptText cStringUsingEncoding:NSUTF8StringEncoding]);
         

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6205E10F1ED3E0E000DD487F"
-               BuildableName = "v9.app"
-               BlueprintName = "v9"
+               BuildableName = "FlatLife.app"
+               BlueprintName = "FlatLife"
                ReferencedContainer = "container:v9.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6205E10F1ED3E0E000DD487F"
-            BuildableName = "v9.app"
-            BlueprintName = "v9"
+            BuildableName = "FlatLife.app"
+            BlueprintName = "FlatLife"
             ReferencedContainer = "container:v9.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6205E10F1ED3E0E000DD487F"
-            BuildableName = "v9.app"
-            BlueprintName = "v9"
+            BuildableName = "FlatLife.app"
+            BlueprintName = "FlatLife"
             ReferencedContainer = "container:v9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6205E10F1ED3E0E000DD487F"
-            BuildableName = "v9.app"
-            BlueprintName = "v9"
+            BuildableName = "FlatLife.app"
+            BlueprintName = "FlatLife"
             ReferencedContainer = "container:v9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

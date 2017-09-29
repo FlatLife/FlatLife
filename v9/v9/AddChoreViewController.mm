@@ -94,12 +94,7 @@ ListWrapper list = *new ListWrapper();
         NSString *uid = [uidNum stringValue];
         UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:uid content: _localNotification trigger:trigger];
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
-            if (!error){
-                NSLog(@"Add NotificationRequest succeeded!");
-            }
-        }];
-        
+        [center addNotificationRequest:request withCompletionHandler:nil];
         list.setChoreObjectValues([fieldText cStringUsingEncoding:NSUTF8StringEncoding], [[outputFormatter stringFromDate:self.timePicker.date] cStringUsingEncoding:NSUTF8StringEncoding]);
         
         //sets up the strings to be stored locally.

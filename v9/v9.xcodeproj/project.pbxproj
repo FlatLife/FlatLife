@@ -54,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6205E1101ED3E0E000DD487F /* v9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = v9.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6205E1101ED3E0E000DD487F /* FlatLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205E11F1ED3E0E000DD487F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6205E1241ED3E0E000DD487F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6205E1291ED3E0E100DD487F /* v9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = v9Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +148,7 @@
 		6205E1111ED3E0E000DD487F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6205E1101ED3E0E000DD487F /* v9.app */,
+				6205E1101ED3E0E000DD487F /* FlatLife.app */,
 				6205E1291ED3E0E100DD487F /* v9Tests.xctest */,
 				6205E1341ED3E0E100DD487F /* v9UITests.xctest */,
 			);
@@ -243,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6205E10F1ED3E0E000DD487F /* v9 */ = {
+		6205E10F1ED3E0E000DD487F /* FlatLife */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6205E13D1ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "v9" */;
+			buildConfigurationList = 6205E13D1ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "FlatLife" */;
 			buildPhases = (
 				6205E10C1ED3E0E000DD487F /* Sources */,
 				6205E10D1ED3E0E000DD487F /* Frameworks */,
@@ -255,9 +255,9 @@
 			);
 			dependencies = (
 			);
-			name = v9;
+			name = FlatLife;
 			productName = v9;
-			productReference = 6205E1101ED3E0E000DD487F /* v9.app */;
+			productReference = 6205E1101ED3E0E000DD487F /* FlatLife.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6205E1281ED3E0E100DD487F /* v9Tests */ = {
@@ -334,7 +334,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6205E10F1ED3E0E000DD487F /* v9 */,
+				6205E10F1ED3E0E000DD487F /* FlatLife */,
 				6205E1281ED3E0E100DD487F /* v9Tests */,
 				6205E1331ED3E0E100DD487F /* v9UITests */,
 			);
@@ -418,12 +418,12 @@
 /* Begin PBXTargetDependency section */
 		6205E12B1ED3E0E100DD487F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6205E10F1ED3E0E000DD487F /* v9 */;
+			target = 6205E10F1ED3E0E000DD487F /* FlatLife */;
 			targetProxy = 6205E12A1ED3E0E100DD487F /* PBXContainerItemProxy */;
 		};
 		6205E1361ED3E0E100DD487F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6205E10F1ED3E0E000DD487F /* v9 */;
+			target = 6205E10F1ED3E0E000DD487F /* FlatLife */;
 			targetProxy = 6205E1351ED3E0E100DD487F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -599,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6205E13D1ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "v9" */ = {
+		6205E13D1ED3E0E100DD487F /* Build configuration list for PBXNativeTarget "FlatLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6205E13E1ED3E0E100DD487F /* Debug */,

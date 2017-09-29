@@ -55,6 +55,16 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if(range.length + range.location > textField.text.length)
+    {
+        return NO;
+    }
+    
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return newLength <= 20;
+}
+
 - (IBAction)saveButton {
     NSString *subjectFieldText = subjectText.text;
     NSString *noticeFieldText = noticeText.text;
