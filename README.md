@@ -9,4 +9,4 @@ FlatLife is an app for students and others who live in communal living environme
 
 1. Install the latest Xcode developer tools
 1. Open v9.xcodeproj in Xcode
-2. Build the project by pressing the run button at the top
+2. Build the project by pressing the run button at the top using the IPhone 7 emulator.
