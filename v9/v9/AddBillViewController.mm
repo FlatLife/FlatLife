@@ -37,6 +37,8 @@ ListWrapper listObj = *new ListWrapper();
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(dismissKeyboard)];
     
+    datePicker.minimumDate = [NSDate date];
+    
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];
 }
