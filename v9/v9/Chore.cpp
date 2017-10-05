@@ -9,7 +9,7 @@
 #include "Chore.hpp"
 
 Chore::Chore() {
-    isComplete = false;
+    //isComplete = false;
     time = "";
     choreSubject = "";
 }
@@ -27,13 +27,13 @@ string Chore::getChoreTime() {
     return time;
 }
 
-bool Chore::returnCompleted() {
-    return isComplete;
-}
-
-void Chore::setCompleted() {
-    this->isComplete = true;
-}
+//bool Chore::returnCompleted() {
+//    return isComplete;
+//}
+//
+//void Chore::setCompleted() {
+//    this->isComplete = true;
+//}
 
 void Chore::setMessage(string text){
     choreSubject = text;

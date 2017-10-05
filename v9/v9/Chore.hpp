@@ -24,8 +24,8 @@ public:
     Chore(string name, string time);
     string getChoreSubject();
     string getChoreTime();
-    bool returnCompleted();
-    void setCompleted();
+//    bool returnCompleted();
+//    void setCompleted();
     void setMessage(string text);
     void setTime(string time);
 };

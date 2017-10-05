@@ -39,6 +39,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     XCTAssertEqual(0, list->returnNoticeListSize());
     XCTAssertEqual(0, list->returnChoreListSize());
+    XCTAssertEqual(0, list->returnBillListSize());
 }
 
 - (void)testAddNotice {
@@ -46,8 +47,10 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     list->setNoticeObjectValues("notice", "Subject");
     XCTAssertEqual(1, list->returnNoticeListSize());
+    XCTAssertEqual("1", list->returnStringNoticeListSize());
     XCTAssertEqual("notice", list->noticeList[0].getNoticeMessage());
     XCTAssertEqual("Subject", list->noticeList[0].getNoticeSubject());
+    
 }
 
 - (void)testAddChore{
@@ -55,6 +58,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     list->setChoreObjectValues("Test", "12:57am");
     XCTAssertEqual(1, list->returnChoreListSize());
+    XCTAssertEqual("1", list->returnStringChoreListSize());
     XCTAssertEqual("Test", list->choreList[0].getChoreSubject());
     XCTAssertEqual("12:57am", list->choreList[0].getChoreTime());
 }
@@ -64,6 +68,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     list->setBillObjectValues("TestBill", "11-11-2017", "100", "50", "test");
     XCTAssertEqual(1, list->returnBillListSize());
+    XCTAssertEqual("1", list->returnStringBillListSize());
     XCTAssertEqual("TestBill", list->billList[0].getBillName());
     XCTAssertEqual("11-11-2017", list->billList[0].getBillDate());
     XCTAssertEqual("100", list->billList[0].getBillCost());
