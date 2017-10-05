@@ -39,9 +39,10 @@
 - (void)testAddNotice {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    list->setNoticeObjectValues("Test");
+    list->setNoticeObjectValues("Subject", "notice");
     XCTAssertEqual(1, list->returnNoticeListSize());
-    XCTAssertEqual("Test", list->noticeList[0].getNoticeMessage());
+    XCTAssertEqual("notice", list->noticeList[0].getNoticeMessage());
+    XCTAssertEqual("Subject", list->noticeList[0].getNoticeSubject());
 }
 
 - (void)testAddChore{
@@ -49,7 +50,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     list->setChoreObjectValues("Test", "12:57am");
     XCTAssertEqual(1, list->returnChoreListSize());
-    XCTAssertEqual("Test", list->choreList[0].getChoreName());
+    XCTAssertEqual("Test", list->choreList[0].getChoreSubject());
     XCTAssertEqual("12:57am", list->choreList[0].getChoreTime());
 }
 
