@@ -51,6 +51,10 @@
     XCTAssertEqual("notice", list->noticeList[0].getNoticeMessage());
     XCTAssertEqual("Subject", list->noticeList[0].getNoticeSubject());
     
+    Notice *notice = new Notice();
+    XCTAssertEqual("", notice->getNoticeMessage());
+    XCTAssertEqual("", notice->getNoticeSubject());
+    
 }
 
 - (void)testAddChore{
@@ -61,7 +65,10 @@
     XCTAssertEqual("1", list->returnStringChoreListSize());
     XCTAssertEqual("Test", list->choreList[0].getChoreSubject());
     XCTAssertEqual("12:57am", list->choreList[0].getChoreTime());
-}
+    
+    Chore *chore = new Chore();
+    XCTAssertEqual("", chore->getChoreSubject());
+    XCTAssertEqual("", chore->getChoreTime());}
 
 - (void)testAddBill{
     // This is an example of a functional test case.
@@ -74,6 +81,13 @@
     XCTAssertEqual("100", list->billList[0].getBillCost());
     XCTAssertEqual("50", list->billList[0].getAmountPaid());
     XCTAssertEqual("test", list->billList[0].getDescript());
+    
+    Bill *bill = new Bill();
+    XCTAssertEqual("", bill->getBillName());
+    XCTAssertEqual("", bill->getBillDate());
+    XCTAssertEqual("", bill->getBillCost());
+    XCTAssertEqual("", bill->getAmountPaid());
+    XCTAssertEqual("", bill->getDescript());
 }
 
 - (void)testEditBill{
