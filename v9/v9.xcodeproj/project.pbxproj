@@ -549,7 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxnewall.v9Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/v9.app/v9";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatLife.app/FlatLife";
 			};
 			name = Debug;
 		};
@@ -561,7 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxnewall.v9Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/v9.app/v9";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlatLife.app/FlatLife";
 			};
 			name = Release;
 		};
